@@ -76,7 +76,7 @@ export default function HomePage() {
 
       {/* ==================== TARJETAS RAPIDAS ==================== */}
       {/* 3 tarjetas que se superponen al hero con margen negativo (-mt-8) */}
-      <section className="mx-auto -mt-8 max-w-7xl px-6">
+      <section className="mx-auto mt-5 max-w-7xl px-6">
         <div className="grid gap-4 md:grid-cols-3">
           {/* Arreglo de datos para las 3 tarjetas */}
           {[

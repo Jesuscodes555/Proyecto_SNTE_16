@@ -1,0 +1,38 @@
+[
+  {
+    "_comentario": "Este archivo es el respaldo local. Los datos principales se leen de Google Sheets. Si la API de Google falla, la pagina usa estos datos automaticamente. Los iconos validos son: Shield, Banknote, GraduationCap, Tag, Scale, Plane.",
+    "titulo": "--- DATOS DE RESPALDO ---",
+    "descripcion": "",
+    "icono": "Shield"
+  },
+  {
+    "titulo": "Seguro de Vida",
+    "descripcion": "Proteccion para ti y tu familia con cobertura integral que incluye gastos medicos mayores, invalidez y fallecimiento.",
+    "icono": "Shield"
+  },
+  {
+    "titulo": "Prestamos Personales",
+    "descripcion": "Acceso a prestamos a corto y mediano plazo con tasas preferenciales exclusivas para agremiados del SNTE.",
+    "icono": "Banknote"
+  },
+  {
+    "titulo": "Capacitacion y Cursos",
+    "descripcion": "Programas de formacion continua, talleres y diplomados gratuitos o con descuento para el desarrollo profesional.",
+    "icono": "GraduationCap"
+  },
+  {
+    "titulo": "Descuentos en Empresas",
+    "descripcion": "Convenios con empresas locales que ofrecen descuentos en salud, bienestar, educacion y servicios diversos.",
+    "icono": "Tag"
+  },
+  {
+    "titulo": "Asesoria Legal",
+    "descripcion": "Servicio de orientacion y asesoria en materia laboral y juridica sin costo adicional para los agremiados.",
+    "icono": "Scale"
+  },
+  {
+    "titulo": "Apoyo en Viaticos",
+    "descripcion": "Respaldo economico para actividades sindicales, comisiones oficiales y representaciones fuera de la ciudad.",
+    "icono": "Plane"
+  }
+]

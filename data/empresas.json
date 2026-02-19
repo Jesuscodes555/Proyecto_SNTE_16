@@ -1,0 +1,52 @@
+[
+  {
+    "_comentario": "Este archivo es el respaldo local. Los datos principales se leen de Google Sheets. Si la API de Google falla, la pagina usa estos datos automaticamente.",
+    "nombre": "--- DATOS DE RESPALDO ---",
+    "descripcion": "",
+    "categoria": "",
+    "contacto": "",
+    "direccion": ""
+  },
+  {
+    "nombre": "Optica Vision Plus",
+    "descripcion": "20% de descuento en lentes graduados y examen de la vista gratuito para agremiados.",
+    "categoria": "Salud",
+    "contacto": "312 314 5678",
+    "direccion": "Centro, Colima"
+  },
+  {
+    "nombre": "Farmacia del Pueblo",
+    "descripcion": "15% de descuento en medicamentos genericos y 10% en patentes.",
+    "categoria": "Salud",
+    "contacto": "312 312 9900",
+    "direccion": "Villa de Alvarez, Colima"
+  },
+  {
+    "nombre": "Dental Care Colima",
+    "descripcion": "Consulta y limpieza dental gratuita. 30% en tratamientos especializados.",
+    "categoria": "Salud",
+    "contacto": "312 313 4455",
+    "direccion": "Col. Centro, Colima"
+  },
+  {
+    "nombre": "Gym Fitness Total",
+    "descripcion": "Mensualidad con 25% de descuento para trabajadores del Tecnologico.",
+    "categoria": "Bienestar",
+    "contacto": "312 100 2233",
+    "direccion": "Villa de Alvarez, Colima"
+  },
+  {
+    "nombre": "Libreria Academica",
+    "descripcion": "10% en libros de texto y material de oficina. Envio gratis a domicilio.",
+    "categoria": "Educacion",
+    "contacto": "312 312 7788",
+    "direccion": "Centro, Colima"
+  },
+  {
+    "nombre": "Taller Mecanico Hermanos Lopez",
+    "descripcion": "Servicio de mantenimiento preventivo con 15% de descuento. Diagnostico gratis.",
+    "categoria": "Servicios",
+    "contacto": "312 314 1122",
+    "direccion": "Col. Liberacion, Villa de Alvarez"
+  }
+]

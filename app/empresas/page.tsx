@@ -26,4 +26,4 @@ export const dynamic = "force-dynamic" // Forzamos que esta pagina sea dinamica 
 export default async function Page() {
   const empresas = await getEmpresas()
   return <EmpresasClient initialEmpresas={empresas} />
-}
+} 

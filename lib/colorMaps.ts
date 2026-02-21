@@ -20,13 +20,13 @@ export const beneficiosColorMap: Record<string, string> = {
 }
 
 export const empresasColorMap: Record<string, string> = {
-  Escolar: "bg-emerald-50 text-emerald-600",
-  Salud: "bg-sky-50 text-sky-600",
-  Restaurante: "bg-amber-50 text-amber-600",
-  Material: "bg-violet-50 text-violet-600",
+  Escolar: "bg-emerald-50 text-emerald-600", // Esmeralda para escolar
+  Salud: "bg-sky-50 text-sky-600", // Cielo para salud
+  Restaurante: "bg-amber-50 text-amber-600", // Amaber para restaurante
+  Material: "bg-violet-50 text-violet-600",  // Violeta para material
   //Tecnología: "bg-indigo-50 text-indigo-600",
-  Tecnología: "bg-rose-50 text-rose-600",
-  Deportes: "bg-orange-50 text-orange-600",
+  Tecnología: "bg-rose-50 text-rose-600", // Rosa para tecnología
+  Deportes: "bg-orange-50 text-orange-600", // Naranja para deportes
 }
 
 

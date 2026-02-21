@@ -10,33 +10,14 @@
 
 import { Building2, Phone, MapPin } from "lucide-react"
 import { getEmpresas } from "@/lib/google-sheets"
-import { useEffect, useState } from "react"
+import { useState } from "react"
 import type { Empresa } from "@/lib/google-sheets"
+import { empresasColorMap } from "@/lib/colorMaps"
 
 
 // Mapa de colores por categoria para las etiquetas de cada tarjeta
 // Cada categoria tiene un color de fondo y texto diferente
-function getCategoryColors(cat : string) {
-  const palette = [
-    "bg-emerald-100 text-emerald-800",
-    "bg-sky-100 text-sky-800",
-    "bg-amber-100 text-amber-800",
-    "bg-rose-100 text-rose-800",
-    "bg-violet-100 text-violet-800",
-    "bg-indigo-100 text-indigo-800",
-    "bg-teal-100 text-teal-800",
-    "bg-orange-100 text-orange-800",
-  ]
 
-  let hash = 0
-  for (let i = 0; i < cat.length; i++) {
-    hash += cat.charCodeAt(i) 
-  }
-
-  const index = hash % palette.length
-  return palette[index]
-
-}
 // Componente principal de la pagina (Server Component asincrono)
 // Tiene una parte asincrona porque necesita esperar los datos de Google Sheets
 export default function EmpresasClient({ initialEmpresas}: {
@@ -123,8 +104,8 @@ export default function EmpresasClient({ initialEmpresas}: {
                 {/* Etiqueta con color segun la categoria */}
                 <span
                   className={`shrink-0 rounded-full px-2.5 py-0.5 text-xs font-medium ${
-                    getCategoryColors(empresa.categoria) ||
-                    "bg-muted text-muted-foreground"
+                    empresasColorMap[empresa.categoria] ??
+                    "bg-gray-100 text-gray-600"
                   }`}
                 >
                   {empresa.categoria}

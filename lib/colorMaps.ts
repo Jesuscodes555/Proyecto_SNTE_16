@@ -1,6 +1,12 @@
-// Este archivo define los mapas de colores e iconos para la pagina beneficios,
-// lo que permite una fácil asociación entre el nombre del beneficio (del Sheet) y su representación visual en la UI.
-// Tambien para la sección de empresas 
+// ============================================================
+// lib/colorMaps.ts
+// Autor: Jesus Avalos (21460040)
+// Descripcion: Este archivo contiene los mapas de colores para los beneficios y empresas.
+// Cada beneficio o empresa tiene asignado un color de fondo y un color de texto para su representacion visual en la aplicacion.
+// Estos mapas se utilizan en los componentes que muestran los beneficios y las empresas para mantener una apariencia consistente.
+// ========================================================
+
+ 
 
 
 
@@ -14,6 +20,13 @@ export const beneficiosColorMap: Record<string, string> = {
 }
 
 export const empresasColorMap: Record<string, string> = {
+  Escolar: "bg-emerald-50 text-emerald-600",
+  Salud: "bg-sky-50 text-sky-600",
+  Restaurante: "bg-amber-50 text-amber-600",
+  Material: "bg-violet-50 text-violet-600",
+  //Tecnología: "bg-indigo-50 text-indigo-600",
+  Tecnología: "bg-rose-50 text-rose-600",
+  Deportes: "bg-orange-50 text-orange-600",
 }
 
 

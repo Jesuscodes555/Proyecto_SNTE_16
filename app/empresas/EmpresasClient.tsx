@@ -98,8 +98,11 @@ export default function EmpresasClient({ initialEmpresas}: {
             >
               {/* Parte superior: icono de empresa + etiqueta de categoria */}
               <div className="flex items-start justify-between gap-3">
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-muted">
-                  <Building2 className="h-5 w-5 text-muted-foreground" />
+                <div className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-lg ${
+                  empresasColorMap[empresa.categoria]?.split(" ")[0] ?? "bg-gray-100" }`}>
+                  <Building2 className={`h-5 w-5 ${
+                    empresasColorMap[empresa.categoria]?.split(" ")[1] ??
+                    "text-gray-800"}`} />
                 </div>
                 {/* Etiqueta con color segun la categoria */}
                 <span

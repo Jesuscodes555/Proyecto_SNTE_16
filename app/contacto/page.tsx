@@ -73,7 +73,7 @@ export default function ContactoPage() {
           {contactInfo.map((item) => (
             <div
               key={item.label}
-              className="flex items-start gap-4 rounded-lg border border-border bg-card p-6"
+              className="flex min-w-0 items-start gap-4 rounded-lg border border-border bg-card p-6"
             >
               {/* Icono del tipo de contacto */}
               <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-accent">
@@ -87,12 +87,12 @@ export default function ContactoPage() {
                 {item.href ? (
                   <a
                     href={item.href}
-                    className="mt-1 text-sm leading-relaxed text-primary transition-colors hover:text-primary/80"
+                    className="mt-1 break-all text-sm leading-relaxed text-primary transition-colors hover:text-primary/80"
                   >
                     {item.value}
                   </a>
                 ) : (
-                  <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
+                  <p className="mt-1 break-words text-sm leading-relaxed text-muted-foreground">
                     {item.value}
                   </p>
                 )}

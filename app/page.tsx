@@ -277,7 +277,7 @@ export default function HomePage() {
                 </div>
                 <div>
                   <p className="text-sm font-medium text-foreground">Correo</p>
-                  <p className=" break-all text-sm text-muted-foreground">
+                  <p className="break-all text-sm text-muted-foreground">
                     delegacion.sindical@colima.tecnm.mx
                   </p>
                 </div>

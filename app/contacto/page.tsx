@@ -8,6 +8,7 @@
 // - Datos de la Secretaria General
 // ============================================================
 
+
 import { Phone, Mail, MapPin, Clock } from "lucide-react" // Iconos de contacto
 import type { Metadata } from "next"
 
@@ -15,7 +16,7 @@ import type { Metadata } from "next"
 export const metadata: Metadata = {
   title: "Contacto | SNTE Delegacion D-V-16",
   description:
-    "Contacta a la Delegacion D-V-16 del SNTE. Direccion, telefono, correo y horario de atencion en el Instituto Tecnologico de Colima.",
+    "Contacta a la Delegación D-V-16 del SNTE. Dirección, teléfono, correo y horario de atención en el Instituto Tecnologico de Colima.",
 }
 
 // Arreglo con la informacion de contacto

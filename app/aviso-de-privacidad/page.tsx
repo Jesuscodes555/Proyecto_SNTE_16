@@ -1,12 +1,14 @@
-// ============================================================
-// app/aviso-de-privacidad/page.tsx
-// Autor: Jesus Avalos (21460040)
-// Descripcion: Pagina del Aviso de Privacidad. Es un requisito
-// legal en Mexico (Ley Federal de Proteccion de Datos Personales)
-// que todo sitio web que recabe datos tenga uno. Esta pagina
-// es estatica (no carga datos externos) y se accede desde el
-// link en el footer del sitio.
-// ============================================================
+/*
+*|=========================================================================|
+*| app/aviso-de-privacidad/page.tsx                                        |  
+*| Autor: Jesus Avalos (21460040)                                          | 
+*| Descripcion: Pagina del Aviso de Privacidad. Es un requisito.           |
+*| legal en Mexico (Ley Federal de Proteccion de Datos Personales).        |
+*| que todo sitio web que recabe datos tenga uno. Esta pagina.             |
+*| es estatica (no carga datos externos) y se accede desde el.             |
+*| link en el footer del sitio.                                            |
+*|=========================================================================|
+*/
 
 import type { Metadata } from "next"
 

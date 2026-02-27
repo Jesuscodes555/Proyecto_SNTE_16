@@ -1,12 +1,14 @@
-// ============================================================
-// lib/utils.ts
-// Autor: Jesus Avalos (21460040)
-// Descripcion: Funcion utilitaria para combinar clases de CSS
-// de Tailwind de forma condicional. Usa clsx para manejar
-// clases condicionales y twMerge para resolver conflictos
-// entre clases de Tailwind (ej: si pones "p-4" y "p-6",
-// twMerge se queda solo con la ultima).
-// ============================================================
+/*
+*|=========================================================================|
+*| lib/utils.ts                                                            |  
+*| Autor: Jesus Avalos (21460040)                                          | 
+*| Descripcion: Funcion utilitaria para combinar clases de CSS             | 
+*| de Tailwind de forma condicional. Usa clsx para manejar                 | 
+*| clases condicionales y twMerge para resolver conflictos                 |
+*| entre clases de Tailwind (ej: si pones "p-4" y "p-6",                   | 
+*| twMerge se queda solo con la ultima).                                   |           
+*|=========================================================================|
+*/
 
 import { clsx, type ClassValue } from "clsx"
 import { twMerge } from "tailwind-merge"

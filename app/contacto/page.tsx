@@ -1,12 +1,14 @@
-// ============================================================
-// app/contacto/page.tsx
-// Autor: Jesus Avalos (21460040)
-// Descripcion: Pagina de Contacto con toda la informacion para
-// comunicarse con la delegacion sindical. Incluye:
-// - Tarjetas con direccion, telefono, correo y horario
-// - Mapa embebido de Google Maps con la ubicacion del Tec
-// - Datos de la Secretaria General
-// ============================================================
+/*
+*|=========================================================================|
+*| app/contacto/page.tsx                                                   |  
+*| Autor: Jesus Avalos (21460040)                                          | 
+*| Descripcion: Pagina de Contacto con toda la informacion para            |
+*| comunicarse con la delegacion sindical. Incluye:                        |
+*| - Tarjetas con direccion, telefono, correo y horario                    |
+*| - Mapa embebido de Google Maps con la ubicacion del Tec                 |
+*| - Datos de la Secretaria General                                        |
+*|=========================================================================|
+*/
 
 
 import { Phone, Mail, MapPin, Clock } from "lucide-react" // Iconos de contacto

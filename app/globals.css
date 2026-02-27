@@ -1,22 +1,22 @@
 /* 
-*|==============================================================================
- * app/globals.css
- * Autor: Jesus Avalos (21460040)
- * Descripcion: Estilos globales del sitio. Aqui se definen los
- * "design tokens" (variables de color) que usa todo el sitio.
- * Tailwind CSS lee estas variables para aplicar los colores.
- *
- * Paleta de colores del sitio:
- * - Primary (naranja): color principal del SNTE - #e07020
- * - Secondary (azul oscuro): fondo del hero y footer - #283347
- * - Background (gris claro): fondo general de las paginas
- * - Card (blanco): fondo de las tarjetas
- * - Muted (gris suave): secciones alternas y texto secundario
- * - Accent (naranja claro): fondos de iconos y resaltados
- *
- * Nota: los valores estan en formato HSL (tono saturacion brillo)
- * porque asi los maneja shadcn/ui internamente.
- * ============================================================================== 
+*|==============================================================================|
+*| app/globals.css                                                              |
+*| Autor: Jesus Avalos (21460040)                                               |
+*| Descripcion: Estilos globales del sitio. Aqui se definen los.                |
+*| "design tokens" (variables de color) que usa todo el sitio.                  |
+*| Tailwind CSS lee estas variables para aplicar los colores.                   |
+*|                                                                              |
+*| Paleta de colores del sitio:                                                 |
+*| - Primary (naranja): color principal del SNTE - #e07020                      |
+*| - Secondary (azul oscuro): fondo del hero y footer - #283347                 |
+*| - Background (gris claro): fondo general de las paginas                      |
+*| - Card (blanco): fondo de las tarjetas                                       |
+*| - Muted (gris suave): secciones alternas y texto secundario                  |
+*| - Accent (naranja claro): fondos de iconos y resaltados                      |
+*|                                                                              |
+*| Nota: los valores estan en formato HSL (tono saturacion brillo)              | 
+*| porque asi los maneja shadcn/ui internamente.                                |
+*|==============================================================================| 
  */
 
 @tailwind base;

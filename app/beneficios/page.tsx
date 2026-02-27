@@ -1,12 +1,14 @@
-// ============================================================
-// app/beneficios/page.tsx
-// Autor: Jesus Avalos (21460040)
-// Descripcion: Pagina que muestra los beneficios sindicales
-// disponibles para los agremiados de la Delegacion D-V-16.
-// Los datos se cargan desde Google Sheets para que la asesora
-// pueda actualizarlos sin necesidad de modificar el codigo.
-// Incluye un CTA (llamada a la accion) hacia la pagina de empresas.
-// ============================================================
+/*
+*|=========================================================================|
+*| app/beneficios/page.tsx                                                 |  
+*| Autor: Jesus Avalos (21460040)                                          | 
+*| Descripcion: Pagina que muestra los beneficios sindicales               |
+*| disponibles para los agremiados de la Delegacion D-V-16.                |
+*| Los datos se cargan desde Google Sheets para que la asesora             |
+*| pueda actualizarlos sin necesidad de modificar el codigo.               | 
+*| Incluye un CTA (llamada a la accion) hacia la pagina de empresas.       |   
+*|=========================================================================|
+*/
 
 import React from "react"
 import Link from "next/link"

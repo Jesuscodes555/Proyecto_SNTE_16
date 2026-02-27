@@ -1,22 +1,24 @@
-// ============================================================
-// lib/google-sheets.ts
-// Autor: Jesus Avalos (21460040)
-// Descripcion: Modulo utilitario para conectarse a Google Sheets
-// y leer los datos de las hojas de calculo que usa la asesora
-// para actualizar empresas y beneficios sin tocar codigo.
-//
-// Como funciona:
-// 1. La asesora edita un Google Sheet normal (como Excel online).
-// 2. Esta funcion llama a la API publica de Google Sheets.
-// 3. Convierte las filas del Sheet en objetos JSON para usar en la web.
-//
-// Requisitos:
-// - La hoja de Google Sheets debe estar compartida como
-//   "Cualquier persona con el enlace puede ver".
-// - Se necesita una API Key de Google (variable GOOGLE_SHEETS_API_KEY).
-// - El ID del Sheet se saca de la URL:
-//   https://docs.google.com/spreadsheets/d/{ESTE_ES_EL_ID}/edit
-// ============================================================
+/* 
+*|=========================================================================|
+*| lib/google-sheets.ts                                                    |  
+*| Autor: Jesus Avalos (21460040)                                          | 
+*| Descripcion: Modulo utilitario para conectarse a Google Sheets          | 
+*| y leer los datos de las hojas de calculo que usa la asesora             | 
+*| para actualizar empresas y beneficios sin tocar codigo.                 | 
+*|                                                                         | 
+*| Como funciona:                                                          | 
+*| 1. La asesora edita un Google Sheet normal (como Excel online).         | 
+*| 2. Esta funcion llama a la API publica de Google Sheets.                | 
+*| 3. Convierte las filas del Sheet en objetos JSON para usar en la web.   | 
+*|                                                                         | 
+*| Requisitos:                                                             |
+*| - La hoja de Google Sheets debe estar compartida como                   | 
+*|   "Cualquier persona con el enlace puede ver".                          | 
+*| - Se necesita una API Key de Google (variable GOOGLE_SHEETS_API_KEY).   |
+*| - El ID del Sheet se saca de la URL:                                    | 
+*|   https://docs.google.com/spreadsheets/d/{ESTE_ES_EL_ID}/edit           | 
+*|=========================================================================|
+*/
 
 // Interfaz que define la estructura de cada empresa en el Sheet
 export interface Empresa {

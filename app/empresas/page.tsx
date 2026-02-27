@@ -1,12 +1,14 @@
-// ============================================================
-// app/empresas/page.tsx
-// Autor: Jesus Avalos (21460040)
-// Descripcion: Pagina que muestra el catalogo de empresas con
-// descuentos exclusivos para los agremiados del SNTE.
-// Los datos se cargan desde Google Sheets para que la asesora
-// pueda actualizarlos sin tocar el codigo. Si no hay conexion
-// a Google Sheets, se usan los datos locales de respaldo.
-// ============================================================
+/*
+*|=========================================================================|
+*| app/empresas/page.tsx                                                   |  
+*| Autor: Jesus Avalos (21460040)                                          | 
+*| Descripcion: Pagina que muestra el catalogo de empresas con             | 
+*| descuentos exclusivos para los agremiados del SNTE.                     |
+*| Los datos se cargan desde Google Sheets para que la asesora             | 
+*| pueda actualizarlos sin tocar el codigo. Si no hay conexion             | 
+*| a Google Sheets, se usan los datos locales de respaldo.                 | 
+*|=========================================================================|
+*/
 
 import EmpresasClient from "./EmpresasClient"
 import { getEmpresas } from "@/lib/google-sheets"

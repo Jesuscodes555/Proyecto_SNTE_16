@@ -1,15 +1,15 @@
 /* 
-* ============================================================
-* app/page.tsx
-* Autor: Jesus Avalos (21460040)
-* Descripcion: Pagina de Inicio del sitio web. Es la primera
-* pagina que ve el usuario al entrar. Contiene:
-* - Hero: seccion principal con imagen de fondo y botones
-* - Tarjetas rapidas: accesos directos a beneficios, empresas, noticias
-* - Bienvenida: seccion informativa con imagen
-* - Preview de noticias: muestra el feed de Facebook
-* - Preview de contacto: resumen de como contactar al sindicato
-* ============================================================
+*|==============================================================================|
+*| app/page.tsx                                                                 | 
+*| Autor: Jesus Avalos (21460040)                                               |
+*| Descripcion: Pagina de Inicio del sitio web. Es la primera                   |
+*| pagina que ve el usuario al entrar. Contiene:                                |
+*| - Hero: seccion principal con imagen de fondo y botones                      |
+*| - Tarjetas rapidas: accesos directos a beneficios, empresas, noticias        |
+*| - Bienvenida: seccion informativa con imagen                                 |
+*| - Preview de noticias: muestra el feed de Facebook                           |  
+*| - Preview de contacto: resumen de como contactar al sindicato                |
+*|==============================================================================|
 */ 
 import Link from "next/link"
 import Image from "next/image" // Componente de Next.js para imagenes optimizadas

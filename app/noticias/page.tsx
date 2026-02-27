@@ -1,11 +1,13 @@
-// ============================================================
-// app/noticias/page.tsx
-// Autor: Jesus Avalos (21460040)
-// Descripcion: Pagina de Noticias que integra el feed de Facebook
-// de la pagina oficial del sindicato. Usa el componente
-// FacebookFeed que carga el plugin oficial de Meta (Facebook
-// Page Plugin) para mostrar las publicaciones en tiempo real.
-// ============================================================
+/*
+*|=========================================================================|
+*| app/noticias/page.tsx                                                   |  
+*| Autor: Jesus Avalos (21460040)                                          | 
+*| Descripcion: Pagina de Noticias que integra el feed de Facebook         | 
+*| de la pagina oficial del sindicato. Usa el componente                   | 
+*| FacebookFeed que carga el plugin oficial de Meta (Facebook              |   
+*| Page Plugin) para mostrar las publicaciones en tiempo real.             |   
+*|=========================================================================|  
+*/
 
 import type { Metadata } from "next"
 import { FacebookFeed } from "@/components/facebook-feed" // Componente del feed de FB

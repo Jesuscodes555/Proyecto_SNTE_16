@@ -1,13 +1,15 @@
-// ============================================================
-// app/sindicato/page.tsx
-// Autor: Jesus Avalos (21460040)
-// Descripcion: Pagina "Sindicato" que muestra la informacion
-// institucional de la Delegacion D-V-16. Incluye:
-// - Historia y compromiso de la delegacion
-// - Mision y Vision en tarjetas lado a lado
-// - Valores sindicales en grid de 4 columnas
-// - Estructura organizacional (mesa directiva)
-// ============================================================
+/*
+*|=========================================================================|
+*| app/sindicato/page.tsx                                                  |  
+*| Autor: Jesus Avalos (21460040)                                          | 
+*| Descripcion: Pagina "Sindicato" que muestra la informacion              | 
+*| institucional de la Delegacion D-V-16. Incluye:                         | 
+*| - Historia y compromiso de la delegacion                                | 
+*| - Mision y Vision en tarjetas lado a lado                               |
+*| - Valores sindicales en grid de 4 columnas                              | 
+*| - Estructura organizacional (mesa directiva)                            | 
+*|=========================================================================|
+*/
 
 import Image from "next/image"
 import { Target, Eye, Heart, Users, BookOpen, Handshake } from "lucide-react"

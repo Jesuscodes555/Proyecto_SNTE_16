@@ -1,11 +1,13 @@
-// ============================================================
-// app/layout.tsx
-// Autor: Jesus Avalos (21460040)
-// Descripcion: Layout principal de la aplicacion. Este archivo
-// envuelve TODAS las paginas del sitio, es decir, todo lo que
-// se ponga aqui (navbar, footer, fuentes) aparece en cada pagina.
-// Next.js usa este archivo como la estructura base del HTML.
-// ============================================================
+/*
+*|=========================================================================|
+*| app/layout.tsx                                                          |  
+*| Autor: Jesus Avalos (21460040)                                          | 
+*| Descripcion: Layout principal de la aplicacion. Este archivo            | 
+*| envuelve TODAS las paginas del sitio, es decir, todo lo que             |   
+*| se ponga aqui (navbar, footer, fuentes) aparece en cada pagina.         | 
+*| Next.js usa este archivo como la estructura base del HTML.              | 
+*|=========================================================================|  
+*/
 
 import React from "react"
 import type { Metadata, Viewport } from "next"

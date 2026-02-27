@@ -1,13 +1,13 @@
 "use client"
 /* 
-*|==============================================================================
+*|==============================================================================|
 *| app/empresas/EmpresasClient.tsx                                              |
 *| Autor: Jesus Avalos (21460040)                                               |
 *| Descripcion: Componente cliente que muestra el catalogo de empresas con.     |
 *| descuentos exclusivos para los agremiados del SNTE. Recibe los datos.        |
 *| de las empresas como props desde la pagina principal (Server Component).     |
 *| y permite filtrar por categoria usando un estado local.                      |
-*|==============================================================================
+*|==============================================================================|
 */
 
 import { Building2, Phone, MapPin } from "lucide-react"

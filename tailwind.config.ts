@@ -1,14 +1,16 @@
-// ============================================================
-// tailwind.config.ts
-// Autor: Jesus Avalos (21460040)
-// Descripcion: Configuracion de Tailwind CSS para el proyecto.
-// Aqui se definen los colores personalizados del tema (usando
-// variables CSS de globals.css), las fuentes, los radios de
-// borde y las animaciones del accordion de shadcn/ui.
-//
-// Los colores del tema se basan en variables HSL para que se
-// puedan cambiar facilmente desde globals.css sin tocar este archivo.
-// ============================================================
+/*
+*|==========================================================================|
+*| tailwind.config.ts                                                       | 
+*| Autor: Jesus Avalos (21460040)                                           |
+*| Descripcion: Configuracion de Tailwind CSS para el proyecto.             |
+*| Aqui se definen los colores personalizados del tema (usando              |
+*| variables CSS de globals.css), las fuentes, los radios de                |
+*| borde y las animaciones del accordion de shadcn/ui.                      |
+*|                                                                          |
+*| Los colores del tema se basan en variables HSL para que se               |
+*| puedan cambiar facilmente desde globals.css sin tocar este archivo.      |
+*|==========================================================================|  
+*/
 
 import type { Config } from "tailwindcss"
 

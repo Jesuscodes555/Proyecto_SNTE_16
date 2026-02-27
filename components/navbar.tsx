@@ -1,12 +1,14 @@
-// ============================================================
-// components/navbar.tsx
-// Autor: Jesus Avalos (21460040)
-// Descripcion: Componente de la barra de navegacion principal.
-// Es "sticky" (se queda fija arriba al hacer scroll) y tiene
-// version de escritorio (links horizontales) y version movil
-// (menu hamburguesa que se abre/cierra). Usa "use client"
-// porque necesita useState para controlar el menu movil.
-// ============================================================
+/*
+*|=========================================================================|
+*| components/navbar.tsx                                                   |     
+*| Autor: Jesus Avalos (21460040)                                          | 
+*| Descripcion: Componente de la barra de navegacion principal.            |   
+*| Es "sticky" (se queda fija arriba al hacer scroll) y tiene              |   
+*| version de escritorio (links horizontales) y version movil              | 
+*| (menu hamburguesa que se abre/cierra). Usa "use client"                 | 
+*| porque necesita useState para controlar el menu movil.                  |      
+*|=========================================================================|
+*/
 
 "use client"
 

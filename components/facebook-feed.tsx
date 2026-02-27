@@ -1,20 +1,21 @@
-// ============================================================
-// components/facebook-feed.tsx
-// Autor: Jesus Avalos (21460040)
-// Descripcion: Componente cliente que carga el Facebook SDK
-// y muestra el feed de la pagina oficial del sindicato usando
-// el Facebook Page Plugin de Meta. Este plugin es gratuito y
-// no requiere API Key, solo que la pagina de FB sea publica.
-//
-// Como funciona:
-// 1. Al montarse el componente, carga el script del SDK de Facebook
-// 2. El SDK busca los elementos con clase "fb-page" y los renderiza
-// 3. Mientras carga, se muestra un placeholder con boton a Facebook
-//
-// Nota: usa "use client" porque necesita useEffect para cargar
-// el script del SDK en el navegador (no funciona en el servidor).
-// ============================================================
-
+/*
+*|=========================================================================|
+*| components/facebook-feed.tsx                                            |     
+*| Autor: Jesus Avalos (21460040)                                          | 
+*| Descripcion: Componente cliente que carga el Facebook SDK               |   
+*| y muestra el feed de la pagina oficial del sindicato usando             |   
+*| el Facebook Page Plugin de Meta. Este plugin es gratuito y              |   
+*| no requiere API Key, solo que la pagina de FB sea publica.              | 
+*|                                                                         | 
+*| Como funciona:                                                          | 
+*| 1. Al montarse el componente, carga el script del SDK de Facebook       | 
+*| 2. El SDK busca los elementos con clase "fb-page" y los renderiza       | 
+*| 3. Mientras carga, se muestra un placeholder con boton a Facebook       | 
+*|                                                                         | 
+*| Nota: usa "use client" porque necesita useEffect para cargar            | 
+*| el script del SDK en el navegador (no funciona en el servidor).         |   
+*|=========================================================================|
+*/
 "use client"
 
 import { useEffect, useRef } from "react"

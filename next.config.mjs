@@ -1,13 +1,15 @@
-// ============================================================
-// next.config.mjs
-// Autor: Jesus Avalos (21460040)
-// Descripcion: Configuracion principal de Next.js.
-//
-// - ignoreBuildErrors: Ignora errores de TypeScript al construir
-//   (esto es para que el deploy no falle por errores menores de tipos).
-// - unoptimized: Las imagenes no pasan por el optimizador de Next.js
-//   (esto es para que funcionen correctamente en cualquier hosting).
-// ============================================================
+/*
+*|==========================================================================|
+*| next.config.mjs                                                          | 
+*| Autor: Jesus Avalos (21460040)                                           |
+*| Descripcion: Configuracion principal de Next.js.                         |
+*| Esta configuracion incluye:                                              |               
+*| - ignoreBuildErrors: Ignora errores de TypeScript al construir           |
+*|   (esto es para que el deploy no falle por errores menores de tipos).    |
+*| - unoptimized: Las imagenes no pasan por el optimizador de Next.js       |
+*|   (esto es para que funcionen correctamente en cualquier hosting).       |
+*|==========================================================================|
+*/
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {

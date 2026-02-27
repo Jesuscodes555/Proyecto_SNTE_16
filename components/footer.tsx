@@ -1,12 +1,14 @@
-// ============================================================
-// components/footer.tsx
-// Autor: Jesus Avalos (21460040)
-// Descripcion: Componente del pie de pagina que se muestra en
-// todas las paginas del sitio. Contiene la informacion del
-// sindicato, links de navegacion, datos de contacto y el link
-// al aviso de privacidad. Usa el color "secondary" (azul oscuro)
-// como fondo para diferenciarlo del contenido principal.
-// ============================================================
+ /*
+*|=========================================================================|
+*| components/footer.tsx                                                   |     
+*| Autor: Jesus Avalos (21460040)                                          | 
+*| Descripcion: Componente del pie de pagina que se muestra en             | 
+*| todas las paginas del sitio. Contiene la informacion del                | 
+*| sindicato, links de navegacion, datos de contacto y el link             | 
+*| al aviso de privacidad. Usa el color "secondary" (azul oscuro)          | 
+*| como fondo para diferenciarlo del contenido principal. El texto es      |          
+*|=========================================================================|
+*/
 
 import Link from "next/link"
 import { Phone, Mail, MapPin } from "lucide-react" // Iconos de contacto

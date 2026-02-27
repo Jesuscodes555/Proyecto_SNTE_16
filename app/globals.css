@@ -1,4 +1,5 @@
-/* ============================================================
+/* 
+*|==============================================================================
  * app/globals.css
  * Autor: Jesus Avalos (21460040)
  * Descripcion: Estilos globales del sitio. Aqui se definen los
@@ -15,7 +16,8 @@
  *
  * Nota: los valores estan en formato HSL (tono saturacion brillo)
  * porque asi los maneja shadcn/ui internamente.
- * ============================================================ */
+ * ============================================================================== 
+ */
 
 @tailwind base;
 @tailwind components;

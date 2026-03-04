@@ -9,7 +9,7 @@
 */
 
 
-
+// Mapa de colores para los beneficios
 export const beneficiosColorMap: Record<string, string> = {
   Seguro: "bg-blue-50 text-blue-600", // Azul para seguro de vida
   Prestamos: "bg-emerald-50 text-emerald-600", // Esmeralda para prestamos
@@ -19,6 +19,7 @@ export const beneficiosColorMap: Record<string, string> = {
   Viaticos: "bg-sky-50 text-sky-600", // Cielo para viaticos
 }
 
+// Mapa de colores para las empresas
 export const empresasColorMap: Record<string, string> = {
   Escolar: "bg-emerald-50 text-emerald-600", // Esmeralda para escolar
   Salud: "bg-sky-50 text-sky-600", // Cielo para salud

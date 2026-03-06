@@ -28,12 +28,12 @@ export default function AvisoPrivacidadPage() {
       {/* Contenido del aviso en formato de parrafos con subtitulos */}
       <div className="mt-8 flex flex-col gap-6 text-sm leading-relaxed text-muted-foreground">
         <p>
-          La Delegacion D-V-16 de la Seccion 61 del Sindicato Nacional de
-          Trabajadores de la Educacion (SNTE), con domicilio en Av. Tecnologico
-          #1, Col. Liberacion, Villa de Alvarez, Colima, es responsable del
+          La Delegación D-V-16 de la Sección 61 del Sindicato Nacional de
+          Trabajadores de la Educación (SNTE), con domicilio en Av. Tecnológico
+          #1, Col. Liberación, Villa de Álvarez, Colima, es responsable del
           tratamiento de los datos personales que nos proporcione, los cuales
           seran protegidos conforme a lo dispuesto por la Ley Federal de
-          Proteccion de Datos Personales en Posesion de los Particulares.
+          Protección de Datos Personales en Posesión de los Particulares.
         </p>
 
         {/* Subtitulo: que datos se recaban */}
@@ -41,7 +41,7 @@ export default function AvisoPrivacidadPage() {
           Datos personales recabados
         </h2>
         <p>
-          Para las finalidades senaladas en el presente aviso de privacidad,
+          Para las finalidades señaladas en el presente aviso de privacidad,
           podemos recabar sus datos personales de distintas formas: cuando usted
           nos los proporciona directamente, cuando visita nuestro sitio web o
           cuando los obtenemos a traves de otras fuentes permitidas por la ley.
@@ -54,9 +54,9 @@ export default function AvisoPrivacidadPage() {
         <p>
           Los datos personales que recabamos los utilizaremos para las
           siguientes finalidades necesarias para la gestion sindical:
-          comunicacion con los agremiados, difusion de beneficios y servicios,
-          organizacion de eventos y actividades sindicales, y atencion a
-          solicitudes de informacion.
+          comunicación con los agremiados, difusión de beneficios y servicios,
+          organización de eventos y actividades sindicales, y atención a
+          solicitudes de información.
         </p>
 
         {/* Subtitulo: como contactar para dudas */}
@@ -74,7 +74,7 @@ export default function AvisoPrivacidadPage() {
 
         {/* Fecha de ultima actualizacion */}
         <p className="mt-4 text-xs text-muted-foreground/60">
-          Ultima actualizacion: Febrero 2026
+          Ultima actualización: Febrero 2026
         </p>
       </div>
     </section>

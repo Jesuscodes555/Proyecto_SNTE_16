@@ -57,7 +57,7 @@ export function Navbar() {
               SNTE D-V-16
             </span>
             <span className="text-xs leading-tight text-muted-foreground">
-              Seccion 61
+              Sección 61
             </span>
           </div>
         </Link>

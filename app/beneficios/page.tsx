@@ -30,9 +30,9 @@ export const dynamic = "force-dynamic" // Forzamos que esta pagina sea dinamica 
 
 // Metadatos SEO de la pagina
 export const metadata: Metadata = {
-  title: "Beneficios | SNTE Delegacion D-V-16",
+  title: "Beneficios | SNTE Delegación D-V-16",
   description:
-    "Conoce todos los beneficios que ofrece la Delegacion D-V-16 del SNTE a sus agremiados del Instituto Tecnologico de Colima.",
+    "Conoce todos los beneficios que ofrece la Delegación D-V-16 del SNTE a sus agremiados del Instituto Tecnológico de Colima.",
 }
 
 // Mapa de iconos: conecta el nombre del icono (string del Sheet)
@@ -65,7 +65,7 @@ export default async function BeneficiosPage() {
             Beneficios Sindicales
           </h1>
           <p className="mt-4 max-w-2xl text-pretty leading-relaxed text-muted-foreground">
-            Como miembro de la Delegacion D-V-16, tienes acceso a una serie de
+            Como miembro de la Delegación D-V-16, tienes acceso a una serie de
             beneficios pensados para tu bienestar y el de tu familia. Aqui te
             presentamos los principales.
           </p>
@@ -108,11 +108,11 @@ export default async function BeneficiosPage() {
         <div className="mx-auto max-w-7xl px-6 py-16">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-balance text-2xl font-bold text-foreground">
-              Tambien contamos con convenios con empresas locales
+              También contamos con convenios con empresas locales
             </h2>
             <p className="mt-3 text-muted-foreground">
               Descubre las empresas que ofrecen descuentos exclusivos a los
-              agremiados del SNTE en el Instituto Tecnologico de Colima.
+              agremiados del SNTE en el Instituto Tecnológico de Colima.
             </p>
             <Button asChild className="mt-6">
               <Link href="/empresas">

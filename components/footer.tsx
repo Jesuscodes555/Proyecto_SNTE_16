@@ -31,23 +31,23 @@ export function Footer() {
               </div>
               <div>
                 <p className="text-sm font-semibold">
-                  SNTE Delegacion D-V-16
+                  SNTE Delegación D-V-16
                 </p>
                 <p className="text-xs text-secondary-foreground/70">
-                  Seccion 61
+                  Sección 61
                 </p>
               </div>
             </div>
             <p className="mt-2 text-sm leading-relaxed text-secondary-foreground/80">
-              Sindicato Nacional de Trabajadores de la Educacion. Delegacion del
-              Instituto Tecnologico de Colima.
+              Sindicato Nacional de Trabajadores de la Educación. Delegación del
+              Instituto Tecnológico de Colima.
             </p>
           </div>
 
           {/* Columna 2: Links de navegacion rapida */}
           <div className="flex flex-col gap-3">
             <h3 className="text-sm font-semibold uppercase tracking-wider text-secondary-foreground/60">
-              Navegacion
+              Navegación
             </h3>
             <nav className="flex flex-col gap-2">
               {/* Mismo arreglo de links que en la navbar */}
@@ -80,7 +80,7 @@ export function Footer() {
               <div className="flex items-start gap-2">
                 <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
                 <span className="text-sm text-secondary-foreground/80">
-                  Av. Tecnologico #1, Col. Liberacion, Villa de Alvarez, Colima
+                  Av. Tecnológico #1, Col. Liberación, Villa de Álvarez, Colima
                 </span>
               </div>
               {/* Telefono */}
@@ -104,7 +104,7 @@ export function Footer() {
         {/* Barra inferior con copyright y aviso de privacidad */}
         <div className="mt-10 flex flex-col items-center justify-between gap-3 border-t border-secondary-foreground/10 pt-6 md:flex-row">
           <p className="text-xs text-secondary-foreground/60">
-            SNTE Delegacion D-V-16, Seccion 61. Todos los derechos reservados.
+            SNTE Delegación D-V-16, Sección 61. Todos los derechos reservados.
           </p>
           <Link
             href="/aviso-de-privacidad"

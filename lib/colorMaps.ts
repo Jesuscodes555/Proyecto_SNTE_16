@@ -11,23 +11,22 @@
 
 // Mapa de colores para los beneficios
 export const beneficiosColorMap: Record<string, string> = {
-  Seguro: "bg-blue-50 text-blue-600", // Azul para seguro de vida
-  Prestamos: "bg-emerald-50 text-emerald-600", // Esmeralda para prestamos
-  Capacitacion: "bg-violet-50 text-violet-600", // Violeta para capacitacion
-  Descuentos: "bg-amber-50 text-amber-600", // Amaber para descuentos
-  Legal: "bg-slate-50 text-slate-600", // Slate para asesoria legal
-  Viaticos: "bg-sky-50 text-sky-600", // Cielo para viaticos
+  Seguro: "bg-blue-50 text-blue-600",        // confianza, protección
+  Prestamos: "bg-emerald-50 text-emerald-600", // dinero, crecimiento
+  Capacitacion: "bg-violet-50 text-violet-600", // aprendizaje
+  Descuentos: "bg-rose-50 text-rose-600",     // ofertas, promociones
+  Legal: "bg-slate-100 text-slate-700",       // formalidad / jurídico
+  Viaticos: "bg-cyan-50 text-cyan-600",       // viajes / movimiento
 }
 
 // Mapa de colores para las empresas
 export const empresasColorMap: Record<string, string> = {
-  Escolar: "bg-emerald-50 text-emerald-600", // Esmeralda para escolar
-  Salud: "bg-sky-50 text-sky-600", // Cielo para salud
-  Restaurante: "bg-amber-50 text-amber-600", // Amaber para restaurante
-  Material: "bg-violet-50 text-violet-600",  // Violeta para material
-  //Tecnología: "bg-indigo-50 text-indigo-600",
-  Tecnología: "bg-rose-50 text-rose-600", // Rosa para tecnología
-  Deportes: "bg-orange-50 text-orange-600", // Naranja para deportes
+  Escolar: "bg-green-50 text-green-600",        // educación
+  Salud: "bg-teal-50 text-teal-600",             // medicina
+  Restaurante: "bg-orange-50 text-orange-600",   // comida
+  Material: "bg-amber-50 text-amber-600",        // herramientas
+  Tecnología: "bg-indigo-50 text-indigo-600",    // tech
+  Deportes: "bg-red-50 text-red-600",             // energía
 }
 
 

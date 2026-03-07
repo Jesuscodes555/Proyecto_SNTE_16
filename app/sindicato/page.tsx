@@ -5,7 +5,7 @@
 *| Descripción: Pagina "Sindicato" que muestra la información              | 
 *| institucional de la Delegación D-V-16. Incluye:                         | 
 *| - Historia y compromiso de la delegación                                | 
-*| - Mision y Visión en tarjetas lado a lado                               |
+*| - Misión y Visión en tarjetas lado a lado                               |
 *| - Valores sindicales en grid de 4 columnas                              | 
 *| - Estructura organizacional (mesa directiva)                            | 
 *|=========================================================================|
@@ -129,30 +129,30 @@ export default function SindicatoPage() {
         </div>
       </section>
 
-      {/* ==================== MISION Y VISION ==================== */}
+      {/* ==================== MISIÓN Y VISION ==================== */}
       {/* 2 tarjetas lado a lado sobre fondo gris */}
       <section className="bg-muted">
         <div className="mx-auto max-w-7xl px-6 py-16">
           <div className="grid gap-8 md:grid-cols-2">
-            {/* Tarjeta de Mision */}
+            {/* Tarjeta de Misión */}
             <div className="rounded-lg border border-border bg-card p-8">
               <div className="flex items-center gap-3">
                 <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-accent">
                   <Target className="h-5 w-5 text-accent-foreground" />
                 </div>
                 <h2 className="text-xl font-bold text-card-foreground">
-                  Mision
+                  Misión
                 </h2>
               </div>
               <p className="mt-4 leading-relaxed text-muted-foreground">
                 Representar y defender los derechos laborales de los
                 trabajadores del Instituto Tecnológico de Colima, promoviendo su
-                bienestar integral a traves de la gestion de beneficios, la
+                bienestar integral a traves de la gestión de beneficios, la
                 capacitación continua y la comunicación efectiva entre los
                 agremiados y las autoridades institucionales.
               </p>
             </div>
-            {/* Tarjeta de Vision */}
+            {/* Tarjeta de Visión */}
             <div className="rounded-lg border border-border bg-card p-8">
               <div className="flex items-center gap-3">
                 <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-accent">

@@ -2,13 +2,13 @@
 *|==========================================================================|
 *| tailwind.config.ts                                                       | 
 *| Autor: Jesus Avalos (21460040)                                           |
-*| Descripcion: Configuracion de Tailwind CSS para el proyecto.             |
-*| Aqui se definen los colores personalizados del tema (usando              |
+*| Descripcion: Configuración de Tailwind CSS para el proyecto.             |
+*| Aquí se definen los colores personalizados del tema (usando              |
 *| variables CSS de globals.css), las fuentes, los radios de                |
 *| borde y las animaciones del accordion de shadcn/ui.                      |
 *|                                                                          |
 *| Los colores del tema se basan en variables HSL para que se               |
-*| puedan cambiar facilmente desde globals.css sin tocar este archivo.      |
+*| puedan cambiar fácilmente desde globals.css sin tocar este archivo.      |
 *|==========================================================================|  
 */
 
@@ -64,7 +64,7 @@ const config: Config = {
         border: "hsl(var(--border))", // Color de bordes
         input: "hsl(var(--input))", // Color de bordes en inputs
         ring: "hsl(var(--ring))", // Color del anillo de focus
-        // Colores para graficas (no se usan en este proyecto pero los dejo)
+        // Colores para gráficas (no se usan en este proyecto pero los dejo)
         chart: {
           "1": "hsl(var(--chart-1))",
           "2": "hsl(var(--chart-2))",
@@ -85,10 +85,10 @@ const config: Config = {
         },
       },
 
-      // Fuentes tipograficas del proyecto
+      // Fuentes tipográficas del proyecto
       fontFamily: {
         sans: ["var(--font-poppins)", "system-ui", "sans-serif"], // Poppins como fuente principal
-        mono: ["var(--font-geist-mono)", "monospace"], // Monoespaciada (para codigo)
+        mono: ["var(--font-geist-mono)", "monospace"], // Mono-espaciada (para código)
       },
 
       // Radios de borde basados en la variable --radius de globals.css

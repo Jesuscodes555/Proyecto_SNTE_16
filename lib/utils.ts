@@ -2,7 +2,7 @@
 *|=========================================================================|
 *| lib/utils.ts                                                            |  
 *| Autor: Jesus Avalos (21460040)                                          | 
-*| Descripcion: Funcion utilitaria para combinar clases de CSS             | 
+*| Descripcion: Función utilitaria para combinar clases de CSS             | 
 *| de Tailwind de forma condicional. Usa clsx para manejar                 | 
 *| clases condicionales y twMerge para resolver conflictos                 |
 *| entre clases de Tailwind (ej: si pones "p-4" y "p-6",                   | 

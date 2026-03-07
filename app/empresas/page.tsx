@@ -14,14 +14,14 @@ import EmpresasClient from "./EmpresasClient"
 import { getEmpresas } from "@/lib/google-sheets"
 import type { Metadata } from "next"
 
-// Metadatos SEO de la pagina para motores de busqueda
+// Metadatos SEO de la pagina para motores de búsqueda
 export const metadata: Metadata = {
   title: "Empresas con Descuentos | SNTE Delegación D-V-16",
   description:
     "Catalogo de empresas con convenios y descuentos exclusivos para agremiados de la Delegación D-V-16.",
 }
 
-export const dynamic = "force-dynamic" // Forzamos que esta pagina sea dinamica para siempre mostrar datos actualizados de Google Sheets  
+export const dynamic = "force-dynamic" // Forzamos que esta pagina sea dinámica para siempre mostrar datos actualizados de Google Sheets  
 
 // Componente principal de la pagina (Server Component asíncrono)
 // Tiene una parte asíncrona porque necesita esperar los datos de Google Sheets

@@ -2,11 +2,11 @@
 *|==========================================================================|
 *| next.config.mjs                                                          | 
 *| Autor: Jesus Avalos (21460040)                                           |
-*| Descripcion: Configuracion principal de Next.js.                         |
-*| Esta configuracion incluye:                                              |               
+*| Descripcion: Configuración principal de Next.js.                         |
+*| Esta configuración incluye:                                              |               
 *| - ignoreBuildErrors: Ignora errores de TypeScript al construir           |
 *|   (esto es para que el deploy no falle por errores menores de tipos).    |
-*| - unoptimized: Las imagenes no pasan por el optimizador de Next.js       |
+*| - unoptimized: Las imágenes no pasan por el optimizador de Next.js       |
 *|   (esto es para que funcionen correctamente en cualquier hosting).       |
 *|==========================================================================|
 */
@@ -17,7 +17,7 @@ const nextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
-  // Desactiva la optimizacion de imagenes de Next.js
+  // Desactiva la optimización de imágenes de Next.js
   // Util cuando se despliega en hosting que no soporta Image Optimization
   images: {
     unoptimized: true,

@@ -2,11 +2,11 @@
 /* 
 *|==============================================================================|
 *| app/empresas/EmpresasClient.tsx                                              |
-*| Autor: Jesus Avalos (21460040)                                               |
-*| Descripcion: Componente cliente que muestra el catalogo de empresas con.     |
+*| Autor: Jesús Avalos (21460040)                                               |
+*| Descripción: Componente cliente que muestra el catalogo de empresas con.     |
 *| descuentos exclusivos para los agremiados del SNTE. Recibe los datos.        |
 *| de las empresas como props desde la pagina principal (Server Component).     |
-*| y permite filtrar por categoria usando un estado local.                      |
+*| y permite filtrar por categoría usando un estado local.                      |
 *|==============================================================================|
 */
 
@@ -21,7 +21,7 @@ import { empresasColorMap } from "@/lib/colorMaps"
 // Cada categoría tiene un color de fondo y texto diferente
 
 // Componente principal de la pagina (Server Component asíncrono)
-// Tiene una parte asincrona porque necesita esperar los datos de Google Sheets
+// Tiene una parte asíncrona porque necesita esperar los datos de Google Sheets
 export default function EmpresasClient({ initialEmpresas}: {
   initialEmpresas: Empresa[]
 }) {
@@ -65,7 +65,7 @@ export default function EmpresasClient({ initialEmpresas}: {
             <span className="font-semibold">Para la administradora:</span> Este
             catálogo se actualiza desde una hoja de Google Sheets. Solo abre el
             Sheet compartido, agrega una nueva fila con los datos de la empresa
-            y los cambios se reflejan automaticamente en la pagina.
+            y los cambios se reflejan automáticamente en la pagina.
           </p>
         </div>
       </section>

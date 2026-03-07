@@ -1,7 +1,7 @@
 /*
 *|=========================================================================|
 *| app/contacto/page.tsx                                                   |  
-*| Autor: Jesus Avalos (21460040)                                          | 
+*| Autor: Jesús Avalos (21460040)                                          | 
 *| Descripción: Pagina de Contacto con toda la información para            |
 *| comunicarse con la delegación sindical. Incluye:                        |
 *| - Tarjetas con dirección, teléfono, correo y horario                    |
@@ -18,7 +18,7 @@ import type { Metadata } from "next"
 export const metadata: Metadata = {
   title: "Contacto | SNTE Delegación D-V-16",
   description:
-    "Contacta a la Delegación D-V-16 del SNTE. Dirección, teléfono, correo y horario de atención en el Instituto Tecnologico de Colima.",
+    "Contacta a la Delegación D-V-16 del SNTE. Dirección, teléfono, correo y horario de atención en el Instituto Tecnológico de Colima.",
 }
 
 // Arreglo con la información de contacto
@@ -124,7 +124,7 @@ export default function ContactoPage() {
           {/* Iframe del mapa - la URL se genera desde Google Maps > Compartir > Insertar */}
           <div className="mt-10 overflow-hidden rounded-lg border border-border shadow-sm">
             <iframe
-              title="Ubicacion del Instituto Tecnologico de Colima"
+              title="Ubicación del Instituto Tecnológico de Colima"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.0725!2d-103.7364!3d19.2665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x84255ab6164e1d21%3A0x7e9e7e8f1b1f1b1f!2sInstituto%20Tecnol%C3%B3gico%20de%20Colima!5e0!3m2!1ses!2smx!4v1700000000000!5m2!1ses!2smx"
               width="100%"
               height="400"

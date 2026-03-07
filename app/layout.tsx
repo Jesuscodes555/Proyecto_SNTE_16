@@ -2,21 +2,21 @@
 *|=========================================================================|
 *| app/layout.tsx                                                          |  
 *| Autor: Jesus Avalos (21460040)                                          | 
-*| Descripcion: Layout principal de la aplicacion. Este archivo            | 
+*| Descripcion: Layout principal de la aplicación. Este archivo            | 
 *| envuelve TODAS las paginas del sitio, es decir, todo lo que             |   
-*| se ponga aqui (navbar, footer, fuentes) aparece en cada pagina.         | 
+*| se ponga aquí (navbar, footer, fuentes) aparece en cada pagina.         | 
 *| Next.js usa este archivo como la estructura base del HTML.              | 
 *|=========================================================================|  
 */
 
 import React from "react"
 import type { Metadata, Viewport } from "next"
-import { Poppins } from "next/font/google" // Fuente tipografica de Google
-import "./globals.css" // Estilos globales (colores, tokens de diseno)
-import { Navbar } from "@/components/navbar" // Barra de navegacion
+import { Poppins } from "next/font/google" // Fuente tipográfica de Google
+import "./globals.css" // Estilos globales (colores, tokens de diseño)
+import { Navbar } from "@/components/navbar" // Barra de navegación
 import { Footer } from "@/components/footer" // Pie de pagina
 
-// Configuracion de la fuente Poppins con los pesos que usamos
+// Configuration de la fuente Poppins con los pesos que usamos
 // La variable CSS --font-poppins permite usarla en Tailwind
 const poppins = Poppins({
   subsets: ["latin"],
@@ -24,14 +24,14 @@ const poppins = Poppins({
   variable: "--font-poppins",
 })
 
-// Metadatos de la pagina para SEO (aparecen en Google y en la pestana del navegador)
+// Metadatos de la pagina para SEO (aparecen en Google y en la pestaña del navegador)
 export const metadata: Metadata = {
-  title: "SNTE Delegacion D-V-16 | Instituto Tecnologico de Colima",
+  title: "SNTE Delegación D-V-16 | Instituto Tecnológico de Colima",
   description:
-    "Pagina web oficial de la Delegacion D-V-16 de la Seccion 61 del SNTE en el Instituto Tecnologico de Colima. Informacion sindical, beneficios, noticias y contacto.",
+    "Pagina web oficial de la Delegación D-V-16 de la Sección 61 del SNTE en el Instituto Tecnológico de Colima. Información sindical, beneficios, noticias y contacto.",
 }
 
-// Color del tema para navegadores moviles (la barrita de arriba en Android)
+// Color del tema para navegadores móviles (la barrita de arriba en Android)
 export const viewport: Viewport = {
   themeColor: "#e07020",
 }
@@ -44,7 +44,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    // lang="es" para indicar a los navegadores que el sitio esta en espanol
+    // lang="es" para indicar a los navegadores que el sitio esta en español
     <html lang="es">
       {/* Aplicamos la variable de la fuente y la clase antialiased para suavizar el texto */}
       <body className={`${poppins.variable} font-sans antialiased`}>

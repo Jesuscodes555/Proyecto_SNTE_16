@@ -2,7 +2,7 @@
 *|==============================================================================|
 *| app/globals.css                                                              |
 *| Autor: Jesus Avalos (21460040)                                               |
-*| Descripcion: Estilos globales del sitio. Aqui se definen los.                |
+*| Descripcion: Estilos globales del sitio. Aquí se definen los.                |
 *| "design tokens" (variables de color) que usa todo el sitio.                  |
 *| Tailwind CSS lee estas variables para aplicar los colores.                   |
 *|                                                                              |
@@ -14,7 +14,7 @@
 *| - Muted (gris suave): secciones alternas y texto secundario                  |
 *| - Accent (naranja claro): fondos de iconos y resaltados                      |
 *|                                                                              |
-*| Nota: los valores estan en formato HSL (tono saturacion brillo)              | 
+*| Nota: los valores están en formato HSL (tono saturación brillo)              | 
 *| porque asi los maneja shadcn/ui internamente.                                |
 *|==============================================================================| 
  */
@@ -23,7 +23,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Utilidad personalizada para equilibrar el texto en los titulos */
+/* Utilidad personalizada para equilibrar el texto en los títulos */
 @layer utilities {
   .text-balance {
     text-wrap: balance;
@@ -61,7 +61,7 @@
     --input: 220 13% 90%; /* Bordes de inputs de formulario */
     --ring: 24 85% 48%; /* Color del anillo de focus (naranja) */
 
-    /* Variables para graficas (no usadas actualmente) */
+    /* Variables para gráficas (no usadas actualmente) */
     --chart-1: 24 85% 48%;
     --chart-2: 216 25% 22%;
     --chart-3: 197 37% 24%;

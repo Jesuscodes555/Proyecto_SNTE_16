@@ -2,10 +2,10 @@
 *|=========================================================================|
 *| app/contacto/page.tsx                                                   |  
 *| Autor: Jesus Avalos (21460040)                                          | 
-*| Descripcion: Pagina de Contacto con toda la informacion para            |
-*| comunicarse con la delegacion sindical. Incluye:                        |
-*| - Tarjetas con direccion, telefono, correo y horario                    |
-*| - Mapa embebido de Google Maps con la ubicacion del Tec                 |
+*| Descripción: Pagina de Contacto con toda la información para            |
+*| comunicarse con la delegación sindical. Incluye:                        |
+*| - Tarjetas con dirección, teléfono, correo y horario                    |
+*| - Mapa embebido de Google Maps con la ubicación del Tec                 |
 *| - Datos de la Secretaria General                                        |
 *|=========================================================================|
 */
@@ -16,34 +16,34 @@ import type { Metadata } from "next"
 
 // Metadatos SEO
 export const metadata: Metadata = {
-  title: "Contacto | SNTE Delegacion D-V-16",
+  title: "Contacto | SNTE Delegación D-V-16",
   description:
     "Contacta a la Delegación D-V-16 del SNTE. Dirección, teléfono, correo y horario de atención en el Instituto Tecnologico de Colima.",
 }
 
-// Arreglo con la informacion de contacto
+// Arreglo con la información de contacto
 // Cada elemento tiene un icono, etiqueta, valor y opcionalmente un href (link)
 const contactInfo = [
   {
     icon: MapPin,
-    label: "Direccion",
+    label: "Dirección",
     value:
-      "Oficina Sindical, Av. Tecnologico #1, Col. Liberacion, Villa de Alvarez, Colima",
+      "Oficina Sindical, Av. Tecnológico #1, Col. Liberación, Villa de Álvarez, Colima",
   },
   {
     icon: Phone,
-    label: "Telefono",
+    label: "Teléfono",
     value: "312 312 6393 / 312 176 9033",
   },
   {
     icon: Mail,
-    label: "Correo electronico",
+    label: "Correo electrónico",
     value: "delegacion.sindical@colima.tecnm.mx",
     href: "mailto:delegacion.sindical@colima.tecnm.mx", // Abre la app de correo al hacer click
   },
   {
     icon: Clock,
-    label: "Horario de atencion",
+    label: "Horario de atención",
     value: "Lunes a viernes, 12:00 p.m. a 6:00 p.m.",
   },
 ]
@@ -55,14 +55,14 @@ export default function ContactoPage() {
       <section className="border-b border-border bg-card">
         <div className="mx-auto max-w-7xl px-6 py-16 md:py-20">
           <span className="text-sm font-medium uppercase tracking-wider text-primary">
-            Comunicate con nosotros
+            Comunícate con nosotros
           </span>
           <h1 className="mt-2 text-balance text-3xl font-bold text-foreground md:text-4xl">
             Contacto
           </h1>
           <p className="mt-4 max-w-2xl text-pretty leading-relaxed text-muted-foreground">
-            Si tienes alguna duda, necesitas informacion o quieres acercarte a
-            la delegacion sindical, aqui encontraras toda la informacion para
+            Si tienes alguna duda, necesitas información o quieres acercarte a
+            la delegación sindical, aquí encontrarás toda la información para
             comunicarte con nosotros.
           </p>
         </div>
@@ -106,19 +106,19 @@ export default function ContactoPage() {
       </section>
 
       {/* ==================== MAPA DE GOOGLE ==================== */}
-      {/* Iframe embebido de Google Maps con la ubicacion del Tec de Colima */}
+      {/* Iframe embebido de Google Maps con la ubicación del Tec de Colima */}
       <section className="bg-muted">
         <div className="mx-auto max-w-7xl px-6 py-16">
           <div className="text-center">
             <span className="text-sm font-medium uppercase tracking-wider text-primary">
-              Ubicacion
+              Ubicación
             </span>
             <h2 className="mt-2 text-balance text-2xl font-bold text-foreground md:text-3xl">
               Donde encontrarnos
             </h2>
             <p className="mx-auto mt-3 max-w-lg text-muted-foreground">
               La oficina sindical se encuentra dentro de las instalaciones del
-              Instituto Tecnologico de Colima.
+              Instituto Tecnológico de Colima.
             </p>
           </div>
           {/* Iframe del mapa - la URL se genera desde Google Maps > Compartir > Insertar */}
@@ -138,19 +138,19 @@ export default function ContactoPage() {
       </section>
 
       {/* ==================== SECRETARIA GENERAL ==================== */}
-      {/* Tarjeta centrada con los datos de la lider sindical */}
+      {/* Tarjeta centrada con los datos de la líder sindical */}
       <section className="mx-auto max-w-7xl px-6 py-16">
         <div className="mx-auto max-w-2xl rounded-lg border border-border bg-card p-8 text-center">
           <h2 className="text-xl font-bold text-card-foreground">
-            Secretaria General
+            Secretaría General
           </h2>
           <p className="mt-2 text-lg text-muted-foreground">
             Dra. Xiomara Clementina Rodriguez Guzman
           </p>
           <p className="mt-1 text-sm text-muted-foreground">
-            Delegacion D-V-16 de la Seccion 61 del SNTE
+            Delegación D-V-16 de la Sección 61 del SNTE
           </p>
-          {/* Correo y telefono de la Secretaria General */}
+          {/* Correo y teléfono de la Secretaria General */}
           <div className="mt-4 flex flex-wrap items-center justify-center gap-4">
             <a
               href="mailto:xiomara.rodriguez@colima.tecnm.mx"

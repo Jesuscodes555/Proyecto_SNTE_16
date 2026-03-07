@@ -17,10 +17,10 @@ import type { Empresa } from "@/lib/google-sheets"
 import { empresasColorMap } from "@/lib/colorMaps"
 
 
-// Mapa de colores por categoria para las etiquetas de cada tarjeta
-// Cada categoria tiene un color de fondo y texto diferente
+// Mapa de colores por categoría para las etiquetas de cada tarjeta
+// Cada categoría tiene un color de fondo y texto diferente
 
-// Componente principal de la pagina (Server Component asincrono)
+// Componente principal de la pagina (Server Component asíncrono)
 // Tiene una parte asincrona porque necesita esperar los datos de Google Sheets
 export default function EmpresasClient({ initialEmpresas}: {
   initialEmpresas: Empresa[]
@@ -31,7 +31,7 @@ export default function EmpresasClient({ initialEmpresas}: {
 
   const categorias = [
     "Todas",
-    ...Array.from(new Set(empresas.map(e => e.categoria))) // Extraemos las categorias unicas para el filtro
+    ...Array.from(new Set(empresas.map(e => e.categoria))) // Extraemos las categorías únicas para el filtro
   ]
 
   const empresasFiltradas = 
@@ -41,7 +41,7 @@ export default function EmpresasClient({ initialEmpresas}: {
 
   return (
     <>
-      {/* Encabezado de la pagina con titulo y descripcion */}
+      {/* Encabezado de la pagina con titulo y descripción */}
       <section className="border-b border-border bg-card">
         <div className="mx-auto max-w-7xl px-6 py-16 md:py-20">
           <span className="text-sm font-medium uppercase tracking-wider text-primary">
@@ -52,8 +52,8 @@ export default function EmpresasClient({ initialEmpresas}: {
           </h1>
           <p className="mt-4 max-w-2xl text-pretty leading-relaxed text-muted-foreground">
             Estas son las empresas que ofrecen descuentos y beneficios
-            exclusivos a los agremiados de la Delegacion D-V-16. Si conoces una
-            empresa que quiera participar, contactanos.
+            exclusivos a los agremiados de la Delegación D-V-16. Si conoces una
+            empresa que quiera participar, contáctenos.  
           </p>
         </div>
       </section>
@@ -63,14 +63,14 @@ export default function EmpresasClient({ initialEmpresas}: {
         <div className="rounded-lg border border-primary/20 bg-accent p-4">
           <p className="text-sm text-accent-foreground">
             <span className="font-semibold">Para la administradora:</span> Este
-            catalogo se actualiza desde una hoja de Google Sheets. Solo abre el
+            catálogo se actualiza desde una hoja de Google Sheets. Solo abre el
             Sheet compartido, agrega una nueva fila con los datos de la empresa
             y los cambios se reflejan automaticamente en la pagina.
           </p>
         </div>
       </section>
 
-      {/* Filtro por categoria - muestra un dropdown con las categorias disponibles */}
+      {/* Filtro por categoría - muestra un dropdown con las categorías disponibles */}
       <section className="mx-auto max-w-7xl px-6 pt-6">
         <div className="flex flex-wrap gap-2">
           {categorias.map(cat => (
@@ -98,7 +98,7 @@ export default function EmpresasClient({ initialEmpresas}: {
               key={empresa.nombre}
               className="flex flex-col rounded-lg border border-border bg-card p-6 transition-shadow hover:shadow-md"
             >
-              {/* Parte superior: icono de empresa + etiqueta de categoria */}
+              {/* Parte superior: icono de empresa + etiqueta de categoría */}
               <div className="flex items-start justify-between gap-3">
                 <div className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-lg ${
                   empresasColorMap[empresa.categoria]?.split(" ")[0] ?? "bg-gray-100" }`}>
@@ -106,7 +106,7 @@ export default function EmpresasClient({ initialEmpresas}: {
                     empresasColorMap[empresa.categoria]?.split(" ")[1] ??
                     "text-gray-800"}`} />
                 </div>
-                {/* Etiqueta con color segun la categoria */}
+                {/* Etiqueta con color según la categoría */}
                 <span
                   className={`shrink-0 rounded-full px-2.5 py-0.5 text-xs font-medium ${
                     empresasColorMap[empresa.categoria] ??
@@ -117,7 +117,7 @@ export default function EmpresasClient({ initialEmpresas}: {
                 </span>
               </div>
 
-              {/* Nombre y descripcion de la empresa */}
+              {/* Nombre y descripción de la empresa */}
               <h3 className="mt-4 text-base font-semibold text-card-foreground">
                 {empresa.nombre}
               </h3>
@@ -125,7 +125,7 @@ export default function EmpresasClient({ initialEmpresas}: {
                 {empresa.descripcion}
               </p>
 
-              {/* Informacion de contacto y direccion */}
+              {/* Información de contacto y dirección */}
               <div className="mt-4 flex flex-col gap-2 border-t border-border pt-4">
                 <div className="flex items-center gap-2">
                   <Phone className="h-3.5 w-3.5 text-primary" />

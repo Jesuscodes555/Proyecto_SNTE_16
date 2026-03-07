@@ -2,23 +2,23 @@
 *|=========================================================================|
 *| components/navbar.tsx                                                   |     
 *| Autor: Jesus Avalos (21460040)                                          | 
-*| Descripcion: Componente de la barra de navegacion principal.            |   
+*| Descripcion: Componente de la barra de navegación principal.            |   
 *| Es "sticky" (se queda fija arriba al hacer scroll) y tiene              |   
-*| version de escritorio (links horizontales) y version movil              | 
+*| version de escritorio (links horizontales) y version móvil              | 
 *| (menu hamburguesa que se abre/cierra). Usa "use client"                 | 
-*| porque necesita useState para controlar el menu movil.                  |      
+*| porque necesita useState para controlar el menu móvil.                  |      
 *|=========================================================================|
 */
 
 "use client"
 
-import Link from "next/link" // Componente de Next.js para navegacion sin recargar la pagina
+import Link from "next/link" // Componente de Next.js para navegación sin recargar la pagina
 import { usePathname } from "next/navigation" // Hook para saber en que pagina estamos
 import { useState } from "react" // Hook de React para manejar estado (menu abierto/cerrado)
 import { Menu, X } from "lucide-react" // Iconos de hamburguesa y cerrar
 import { cn } from "@/lib/utils" // Utilidad para combinar clases CSS condicionalmente
 
-// Arreglo con todos los links de navegacion
+// Arreglo con todos los links de navegación
 // href: la ruta de la pagina, label: el texto que se muestra
 const links = [
   { href: "/", label: "Inicio" },
@@ -32,7 +32,7 @@ const links = [
 export function Navbar() {
   // usePathname nos dice la ruta actual, ej: "/beneficios"
   const pathname = usePathname()
-  // Estado para controlar si el menu movil esta abierto o cerrado
+  // Estado para controlar si el menu móvil esta abierto o cerrado
   const [mobileOpen, setMobileOpen] = useState(false)
 
   return (
@@ -62,7 +62,7 @@ export function Navbar() {
           </div>
         </Link>
 
-        {/* Menu de escritorio - se oculta en pantallas pequenas (hidden md:flex) */}
+        {/* Menu de escritorio - se oculta en pantallas pequeñas (hidden md:flex) */}
         <ul className="hidden items-center gap-1 md:flex">
           {links.map((link) => (
             <li key={link.href}>
@@ -82,7 +82,7 @@ export function Navbar() {
           ))}
         </ul>
 
-        {/* Boton hamburguesa - solo visible en movil (md:hidden) */}
+        {/* Botón hamburguesa - solo visible en móvil (md:hidden) */}
         <button
           type="button"
           className="rounded-md p-2 text-muted-foreground hover:bg-muted md:hidden"
@@ -98,7 +98,7 @@ export function Navbar() {
         </button>
       </nav>
 
-      {/* Menu movil desplegable - solo se muestra cuando mobileOpen es true */}
+      {/* Menu móvil desplegable - solo se muestra cuando mobileOpen es true */}
       {mobileOpen && (
         <div className="border-t border-border px-6 pb-4 md:hidden">
           <ul className="flex flex-col gap-1 pt-2">

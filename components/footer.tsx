@@ -3,8 +3,8 @@
 *| components/footer.tsx                                                   |     
 *| Autor: Jesus Avalos (21460040)                                          | 
 *| Descripcion: Componente del pie de pagina que se muestra en             | 
-*| todas las paginas del sitio. Contiene la informacion del                | 
-*| sindicato, links de navegacion, datos de contacto y el link             | 
+*| todas las paginas del sitio. Contiene la información del                | 
+*| sindicato, links de navegación, datos de contacto y el link             | 
 *| al aviso de privacidad. Usa el color "secondary" (azul oscuro)          | 
 *| como fondo para diferenciarlo del contenido principal. El texto es      |          
 *|=========================================================================|
@@ -18,7 +18,7 @@ export function Footer() {
     // El footer usa bg-secondary (azul oscuro) con texto claro
     <footer className="border-t border-border bg-secondary text-secondary-foreground">
       <div className="mx-auto max-w-7xl px-6 py-12">
-        {/* Grid de 3 columnas en escritorio, 1 en movil */}
+        {/* Grid de 3 columnas en escritorio, 1 en móvil */}
         <div className="grid gap-8 md:grid-cols-3">
           {/* Columna 1: Logo y descripcion del sindicato */}
           <div className="flex flex-col gap-3">
@@ -44,7 +44,7 @@ export function Footer() {
             </p>
           </div>
 
-          {/* Columna 2: Links de navegacion rapida */}
+          {/* Columna 2: Links de navegación rápida */}
           <div className="flex flex-col gap-3">
             <h3 className="text-sm font-semibold uppercase tracking-wider text-secondary-foreground/60">
               Navegación
@@ -76,21 +76,21 @@ export function Footer() {
               Contacto
             </h3>
             <div className="flex flex-col gap-3">
-              {/* Direccion fisica */}
+              {/* Direccion física */}
               <div className="flex items-start gap-2">
                 <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
                 <span className="text-sm text-secondary-foreground/80">
                   Av. Tecnológico #1, Col. Liberación, Villa de Álvarez, Colima
                 </span>
               </div>
-              {/* Telefono */}
+              {/* Teléfono */}
               <div className="flex items-center gap-2">
                 <Phone className="h-4 w-4 shrink-0 text-primary" />
                 <span className="text-sm text-secondary-foreground/80">
                   312 312 6393
                 </span>
               </div>
-              {/* Correo electronico */}
+              {/* Correo electrónico */}
               <div className="flex items-center gap-2">
                 <Mail className="h-4 w-4 shrink-0 text-primary" />
                 <span className="text-sm text-secondary-foreground/80">

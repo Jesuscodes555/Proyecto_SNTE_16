@@ -1,11 +1,11 @@
 /*
 *|=========================================================================|
 *| app/sindicato/page.tsx                                                  |  
-*| Autor: Jesus Avalos (21460040)                                          | 
-*| Descripcion: Pagina "Sindicato" que muestra la informacion              | 
-*| institucional de la Delegacion D-V-16. Incluye:                         | 
-*| - Historia y compromiso de la delegacion                                | 
-*| - Mision y Vision en tarjetas lado a lado                               |
+*| Autor: Jesús Avalos (21460040)                                          | 
+*| Descripción: Pagina "Sindicato" que muestra la información              | 
+*| institucional de la Delegación D-V-16. Incluye:                         | 
+*| - Historia y compromiso de la delegación                                | 
+*| - Mision y Visión en tarjetas lado a lado                               |
 *| - Valores sindicales en grid de 4 columnas                              | 
 *| - Estructura organizacional (mesa directiva)                            | 
 *|=========================================================================|
@@ -15,27 +15,27 @@ import Image from "next/image"
 import { Target, Eye, Heart, Users, BookOpen, Handshake } from "lucide-react"
 import type { Metadata } from "next"
 
-// Metadatos SEO de la pagina
+// Metadatos SEO de la página
 export const metadata: Metadata = {
-  title: "Sindicato | SNTE Delegacion D-V-16",
+  title: "Sindicato | SNTE Delegación D-V-16",
   description:
-    "Conoce la mision, vision, valores y estructura de la Delegacion D-V-16 de la Seccion 61 del SNTE en el Instituto Tecnologico de Colima.",
+    "Conoce la misión, visión, valores y estructura de la Delegación D-V-16 de la Sección 61 del SNTE en el Instituto Tecnológico de Colima.",
 }
 
-// Arreglo de valores sindicales con su icono, titulo y descripcion
+// Arreglo de valores sindicales con su icono, título y descripción
 // Cada valor se renderiza como una tarjeta en el grid
 const values = [
   {
     icon: Heart,
     title: "Solidaridad",
     description:
-      "Trabajamos unidos para el bienestar comun de todos los agremiados y sus familias.",
+      "Trabajamos unidos para el bienestar común de todos los agremiados y sus familias.",
   },
   {
     icon: Handshake,
     title: "Transparencia",
     description:
-      "Gestion abierta y honesta en cada una de nuestras acciones y decisiones sindicales.",
+      "Gestión abierta y honesta en cada una de nuestras acciones y decisiones sindicales.",
   },
   {
     icon: Users,
@@ -63,7 +63,7 @@ const structure = [
     nombre: "Por confirmar",
   },
   {
-    cargo: "Secretaria de Organizacion",
+    cargo: "Secretaria de Organización",
     nombre: "Por confirmar",
   },
   {
@@ -86,12 +86,12 @@ export default function SindicatoPage() {
             Sobre Nosotros
           </span>
           <h1 className="mt-2 text-balance text-3xl font-bold text-foreground md:text-4xl">
-            Delegacion Sindical D-V-16
+            Delegación Sindical D-V-16
           </h1>
           <p className="mt-4 max-w-2xl text-pretty leading-relaxed text-muted-foreground">
-            Somos la representacion sindical de los trabajadores del Instituto
-            Tecnologico de Colima, pertenecientes a la Seccion 61 del Sindicato
-            Nacional de Trabajadores de la Educacion (SNTE).
+            Somos la representación sindical de los trabajadores del Instituto
+            Tecnológico de Colima, pertenecientes a la Sección 61 del Sindicato
+            Nacional de Trabajadores de la Educación (SNTE).
           </p>
         </div>
       </section>
@@ -104,7 +104,7 @@ export default function SindicatoPage() {
           <div className="relative aspect-[4/3] overflow-hidden rounded-lg">
             <Image
               src="/images/sindicato.jpg"
-              alt="Trabajadores del Instituto Tecnologico de Colima"
+              alt="Trabajadores del Instituto Tecnológico de Colima"
               fill
               className="object-cover"
             />
@@ -115,15 +115,15 @@ export default function SindicatoPage() {
               Nuestra historia y compromiso
             </h2>
             <p className="mt-4 leading-relaxed text-muted-foreground">
-              La Delegacion D-V-16 forma parte de la Seccion 61 del SNTE y
-              opera dentro del Instituto Tecnologico de Colima. Nuestra labor se
+              La Delegación D-V-16 forma parte de la Sección 61 del SNTE y
+              opera dentro del Instituto Tecnológico de Colima. Nuestra labor se
               centra en representar, apoyar y brindar beneficios laborales y
               sociales a todos los agremiados.
             </p>
             <p className="mt-3 leading-relaxed text-muted-foreground">
-              En conjunto con el Tecnologico Nacional de Mexico, formamos un
-              entorno institucional que combina educacion, organizacion laboral y
-              servicios orientados al bienestar de la comunidad tecnologica.
+              En conjunto con el Tecnológico Nacional de México, formamos un
+              entorno institucional que combina educación, organización laboral y
+              servicios orientados al bienestar de la comunidad tecnológica.
             </p>
           </div>
         </div>
@@ -146,9 +146,9 @@ export default function SindicatoPage() {
               </div>
               <p className="mt-4 leading-relaxed text-muted-foreground">
                 Representar y defender los derechos laborales de los
-                trabajadores del Instituto Tecnologico de Colima, promoviendo su
+                trabajadores del Instituto Tecnológico de Colima, promoviendo su
                 bienestar integral a traves de la gestion de beneficios, la
-                capacitacion continua y la comunicacion efectiva entre los
+                capacitación continua y la comunicación efectiva entre los
                 agremiados y las autoridades institucionales.
               </p>
             </div>
@@ -163,11 +163,11 @@ export default function SindicatoPage() {
                 </h2>
               </div>
               <p className="mt-4 leading-relaxed text-muted-foreground">
-                Ser una delegacion sindical reconocida por su transparencia,
+                Ser una delegación sindical reconocida por su transparencia,
                 eficiencia y compromiso con el desarrollo profesional y personal
                 de sus agremiados, consolidando un ambiente laboral justo,
                 inclusivo y de respeto mutuo dentro de la comunidad del
-                Tecnologico de Colima.
+                Tecnológico de Colima.
               </p>
             </div>
           </div>
@@ -213,14 +213,14 @@ export default function SindicatoPage() {
         <div className="mx-auto max-w-7xl px-6 py-16">
           <div className="text-center">
             <span className="text-sm font-medium uppercase tracking-wider text-primary">
-              Organizacion
+              Organización
             </span>
             <h2 className="mt-2 text-balance text-2xl font-bold text-foreground md:text-3xl">
               Estructura Sindical
             </h2>
             <p className="mx-auto mt-3 max-w-lg text-muted-foreground">
               Conoce a las personas que conforman la mesa directiva de la
-              Delegacion D-V-16.
+              Delegación D-V-16.
             </p>
           </div>
           {/* Lista tipo tabla con bordes entre filas */}

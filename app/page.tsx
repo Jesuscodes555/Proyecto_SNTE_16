@@ -251,7 +251,7 @@ export default function HomePage() {
                 </div>
                 <div>
                   <p className="text-sm font-medium text-foreground">
-                    Direccion
+                    Dirección
                   </p>
                   <p className="text-sm text-muted-foreground">
                     Av. Tecnológico #1, Col. Liberación, Villa de Alvarez,

@@ -88,8 +88,8 @@ export const reducer = (state: State, action: Action): State => {
     case 'DISMISS_TOAST': {
       const { toastId } = action
 
-      // ! Side effects ! - This could be extracted into a dismissToast() action,
-      // but I'll keep it here for simplicity
+      // Si se proporciona un toastId, se agrega a la cola de eliminación. Si no se proporciona, se agregan todos los toasts a la cola de eliminación.
+      // Pero se hace aquí para evitar que el toast desaparezca antes de tiempo si se llama a dismiss varias veces seguidas
       if (toastId) {
         addToRemoveQueue(toastId)
       } else {

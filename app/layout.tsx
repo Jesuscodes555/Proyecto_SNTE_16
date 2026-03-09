@@ -2,7 +2,7 @@
 *|=========================================================================|
 *| app/layout.tsx                                                          |  
 *| Autor: Jesus Avalos (21460040)                                          | 
-*| Descripcion: Layout principal de la aplicación. Este archivo            | 
+*| Descripción: Layout principal de la aplicación. Este archivo            | 
 *| envuelve TODAS las paginas del sitio, es decir, todo lo que             |   
 *| se ponga aquí (navbar, footer, fuentes) aparece en cada pagina.         | 
 *| Next.js usa este archivo como la estructura base del HTML.              | 

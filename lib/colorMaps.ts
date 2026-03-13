@@ -3,7 +3,7 @@
 *| lib/colorMaps.ts                                                                                                                 |       
 *| Autor: Jesus Avalos (21460040)                                                                                                   |
 *| Descripcion: Este archivo contiene los mapas de colores para los beneficios y empresas.                                          |
-*| Cada beneficio o empresa tiene asignado un color de fondo y un color de texto para su representacion visual en la aplicacion.    |
+*| Cada beneficio o empresa tiene asignado un color de fondo y un color de texto para su representación visual en la aplicación.    |
 *| Estos mapas se utilizan en los componentes que muestran los beneficios y las empresas para mantener una apariencia consistente.  |
 *|==================================================================================================================================|
 */

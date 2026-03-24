@@ -61,34 +61,30 @@ export default function EmpresasClient({ initialEmpresas }: {
           {empresas.map((empresa) => (
             <article
               key={empresa.codigo}
-              className="flex flex-col rounded-lg border border-border bg-card p-6 transition-shadow hover:shadow-md"
+              className="flex h-full flex-col rounded-lg border border-border bg-card p-6 transition-shadow hover:shadow-md"
             >
-              {/* Icono + nombre */}
-              <div className="flex items-center gap-3">
-                <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
-                  <Building2 className="h-5 w-5 text-primary" />
-                </div>
-
-                {/* Código de la empresa */}
+                              {/* Código de la empresa */}
                   <div
                     onClick={() => {navigator.clipboard.writeText(empresa.codigo)
                       setCopiado(empresa.codigo)
                       setTimeout(() => setCopiado(""), 2000)  
                     } }
-                    className="mt-3 cursor-pointer select-none rounded-md bg-primary/10 px-3 py-2 text-center transition hover:bg-primary/20"
+                    className="mb-4 cursor-pointer select-none rounded-md bg-primary/10 px-3 py-3 text-center transition hover:bg-primary/20"
                     title="Haz clic para copiar el código al portapapeles">
-                    <p className="text-xl font-bold text-muted-foreground">
+                    <p className="mt-1 text-xl font-bold  tracking-wider text-primary">
                       {copiado === empresa.codigo ? "Copiado!" : `Código: ${empresa.codigo}`}
                     </p>
                   </div>
+              {/* Icono + nombre */}
+              <div className="flex items-center gap-3">
+                <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
+                  <Building2 className="h-5 w-5 text-primary" />
                 </div>
-
-                <div>
-                  <h3 className="text-base font-semibold text-card-foreground">
+                <h3 className="text-base font-semibold text-card-foreground">
                     {empresa.nombre}
                   </h3>
-              </div>
-
+                </div>
+              
               {/* Descripción */}
               <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
                 {empresa.descripcion}

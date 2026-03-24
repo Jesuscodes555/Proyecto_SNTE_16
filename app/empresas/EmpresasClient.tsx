@@ -3,7 +3,7 @@
 *|==============================================================================|
 *| app/empresas/EmpresasClient.tsx                                              |
 *| Autor: Jesús Avalos (21460040)                                               |
-*| Descripción: Componente cliente que muestra el catalogo de empresas con.     |
+*| Descripción: Componente cliente que muestra el catalogo de empresas con     |
 *| descuentos exclusivos para los agremiados del SNTE. Recibe los datos.        |
 *| de las empresas como props desde la pagina principal (Server Component).     |
 *| y permite filtrar por categoría usando un estado local.                      |
@@ -12,15 +12,17 @@
 
 import { Building2, Phone, MapPin } from "lucide-react"
 import type { Empresa } from "@/lib/google-sheets"
+import { useState } from "react"
 
 
 // Componente principal de la pagina (Server Component asíncrono)
 // Tiene una parte asíncrona porque necesita esperar los datos de Google Sheets
-export default function EmpresasClient({ initialEmpresas}: {
+export default function EmpresasClient({ initialEmpresas }: {
   initialEmpresas: Empresa[]
 }) {
-  
+
   const empresas = initialEmpresas // Si no hay datos, usamos arreglo vacío para evitar errores
+  const [copiado, setCopiado] = useState("") // Estado para mostrar mensaje de "copiado" temporalmente
   return (
     <>
       {/* Encabezado de la pagina con titulo y descripción */}
@@ -35,7 +37,7 @@ export default function EmpresasClient({ initialEmpresas}: {
           <p className="mt-4 max-w-2xl text-pretty leading-relaxed text-muted-foreground">
             Estas son las empresas que ofrecen descuentos y beneficios
             exclusivos a los agremiados de la Delegación D-V-16. Si conoces una
-            empresa que quiera participar, contáctenos.  
+            empresa que quiera participar, contáctenos.
           </p>
         </div>
       </section>
@@ -71,9 +73,17 @@ export default function EmpresasClient({ initialEmpresas}: {
                   <h3 className="text-base font-semibold text-card-foreground">
                     {empresa.nombre}
                   </h3>
-                  <p className="text-xs text-muted-foreground">
-                    Código: {empresa.codigo}
-                  </p>
+                  <div
+                    onClick={() => {navigator.clipboard.writeText(empresa.codigo)
+                      setCopiado(empresa.codigo)
+                      setTimeout(() => setCopiado(""), 2000)  
+                    } }
+                    className="mt-3 cursor-pointer select-none rounded-md bg-primary/10 px-3 py-2 text-center transition hover:bg-primary/20"
+                    title="Haz clic para copiar el código al portapapeles">
+                    <p className="text-xl font-bold text-muted-foreground">
+                      {copiado === empresa.codigo ? "Copiado!" : `Código: ${empresa.codigo}`}
+                    </p>
+                  </div>
                 </div>
               </div>
 

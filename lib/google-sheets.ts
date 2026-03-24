@@ -8,7 +8,7 @@
 *|                                                                         | 
 *| Como funciona:                                                          | 
 *| 1. La asesora edita un Google Sheet normal (como Excel online).         | 
-*| 2. Esta funcion llama a la API publica de Google Sheets.                | 
+*| 2. Esta función llama a la API publica de Google Sheets.                | 
 *| 3. Convierte las filas del Sheet en objetos JSON para usar en la web.   | 
 *|                                                                         | 
 *| Requisitos:                                                             |
@@ -22,11 +22,9 @@
 
 // Interfaz que define la estructura de cada empresa en el Sheet
 export interface Empresa {
+  codigo: string 
   nombre: string
   descripcion: string
-  categoria: string
-  contacto: string
-  direccion: string
 }
 
 // Interfaz que define la estructura de cada beneficio en el Sheet
@@ -40,7 +38,7 @@ export interface Beneficio {
 const SHEETS_BASE_URL = "https://sheets.googleapis.com/v4/spreadsheets"
 
 /**
- * fetchSheetData - Funcion genérica para leer datos de cualquier hoja
+ * fetchSheetData - Función genérica para leer datos de cualquier hoja
  *
  * @param spreadsheetId - El ID único del Google Sheet
  * @param range - El rango de celdas a leer, ej: "Hoja1!A2:E"
@@ -68,7 +66,7 @@ async function fetchSheetData(
     return []
   }
 
-  // Construimos la URL de la API con los parametros necesarios
+  // Construimos la URL de la API con los parámetros necesarios
   const url = `${SHEETS_BASE_URL}/${spreadsheetId}/values/${range}?key=${apiKey}`
 
   // Hacemos el fetch con cache de 5 minutos (300 segundos)
@@ -115,7 +113,7 @@ export async function getEmpresas(): Promise<Empresa[]> {
   }
 
   // Leemos desde la fila 2 (A2) para saltar los encabezados
-  const rows = await fetchSheetData(sheetId, "Empresas!A2:E")
+  const rows = await fetchSheetData(sheetId, "Empresas!A2:C")
 
   // Si no hay filas (sheet vacío o error), usamos datos de respaldo
   if (rows.length === 0) {
@@ -125,11 +123,9 @@ export async function getEmpresas(): Promise<Empresa[]> {
 
   // Convertimos cada fila (arreglo de strings) a un objeto Empresa
   return rows.map((row) => ({
-    nombre: row[0] || "",
-    descripcion: row[1] || "",
-    categoria: row[2] || "",
-    contacto: row[3] || "",
-    direccion: row[4] || "",
+    codigo: row[0] || "", // Asumimos que el código es la primera columna (A)
+    nombre: row[1] || "",
+    descripcion: row[2] || "",
   }))
 }
 

@@ -1,15 +1,17 @@
 {
-    "cSpell.words": [ //Palabras que se han agregado al diccionario para que no sean marcadas como errores ortográficos
+    "cSpell.words": [
         "Avalos",
         "Capacitacion",
         "categoria",
         "categorias",
         "clickeable",
+        "codigo",
         "descripcion",
         "direccion",
         "empresas",
         "geist",
         "optimizador",
+        "Parseamos",
         "poppins",
         "renderiza",
         "renderizarlo",

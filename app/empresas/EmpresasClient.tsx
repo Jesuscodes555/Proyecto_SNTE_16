@@ -69,10 +69,7 @@ export default function EmpresasClient({ initialEmpresas }: {
                   <Building2 className="h-5 w-5 text-primary" />
                 </div>
 
-                <div>
-                  <h3 className="text-base font-semibold text-card-foreground">
-                    {empresa.nombre}
-                  </h3>
+                {/* Código de la empresa */}
                   <div
                     onClick={() => {navigator.clipboard.writeText(empresa.codigo)
                       setCopiado(empresa.codigo)
@@ -85,6 +82,11 @@ export default function EmpresasClient({ initialEmpresas }: {
                     </p>
                   </div>
                 </div>
+
+                <div>
+                  <h3 className="text-base font-semibold text-card-foreground">
+                    {empresa.nombre}
+                  </h3>
               </div>
 
               {/* Descripción */}

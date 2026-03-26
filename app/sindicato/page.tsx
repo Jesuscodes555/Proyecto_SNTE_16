@@ -55,8 +55,8 @@ const values = [
 // Los que dicen "Por confirmar" se actualizan cuando se tengan los nombres
 const structure = [
   {
-    cargo: "Secretaria General",
-    nombre: "Dra. Xiomara Clementina Rodriguez Guzman",
+    cargo: "Secretaría General",
+    nombre: "Dra. Xiomara Clementina Rodríguez Guzmán",
   },
   {
     cargo: "Secretaria de Trabajo y Conflictos",

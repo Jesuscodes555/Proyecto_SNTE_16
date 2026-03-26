@@ -23,6 +23,7 @@ export default function EmpresasClient({
 }) {
   const empresas = initialEmpresas; // Si no hay datos, usamos arreglo vacío para evitar errores
   const [copiado, setCopiado] = useState(""); // Estado para mostrar mensaje de "copiado" temporalmente
+  const [mostrarToast, setMostrarToast] = useState(false); 
   return (
     <>
       {/* Encabezado de la pagina con titulo y descripción */}
@@ -66,11 +67,11 @@ export default function EmpresasClient({
               {/* Código de la empresa */}
               <div
                 onClick={() => {
-                  navigator.clipboard.writeText(empresa.codigo);
-                  setCopiado(empresa.codigo);
-                  setTimeout(() => setCopiado(""), 2000);
+                  navigator.clipboard.writeText(empresa.codigo)
+                  setMostrarToast(true)
+                  setTimeout(() => { setMostrarToast(false)}, 800);
                 }}
-                className="mb-4 cursor-pointer select-none rounded-md bg-primary/10 px-3 py-3 text-center transition hover:bg-primary/20"
+                className="mb-5 cursor-pointer select-none rounded-md bg-primary/10 px-3 py-3 text-center transition hover:bg-primary/20"
                 title="Haz clic para copiar el código al portapapeles"
               >
                 <p className="mt-1 text-xl font-bold  tracking-wider text-primary">
@@ -84,7 +85,7 @@ export default function EmpresasClient({
                 <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
                   <Building2 className="h-5 w-5 text-primary" />
                 </div>
-                <h3 className="text-base font-semibold text-card-foreground">
+                <h3 className="text-lg font-semibold text-card-foreground">
                   {empresa.nombre}
                 </h3>
               </div>
@@ -94,14 +95,21 @@ export default function EmpresasClient({
                 {empresa.descripcion}
               </p>
               <div className="mt-6 border-t border-dashed border-border pt-3 text-center">
-                <span className="text-sm text-muted-foreground">
-                  Presenta este código en la empresa para obtener tu descuento exclusivo.
+                <span className="text-sm leading relaxed text-muted-foreground">
+                  Presenta el código mostrado arriba en la empresa para obtener tu descuento exclusivo.
                 </span>
               </div>
             </article>
           ))}
         </div>
       </section>
+      {/* Toast para copiar código*/ }
+      { mostrarToast && (
+        <div className="fixed bottom-6 left-1/2 z-50 -translate-x-1/2 rounded-md bg-primary px-4 py-2 text-sm text-white shadow-lg animate-fade-in">
+          Codigo Copiado
+        </div>
+      )
+      } 
     </>
   );
 }

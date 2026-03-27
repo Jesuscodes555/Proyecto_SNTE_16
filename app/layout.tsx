@@ -15,6 +15,7 @@ import { Poppins } from "next/font/google" // Fuente tipográfica de Google
 import "./globals.css" // Estilos globales (colores, tokens de diseño)
 import { Navbar } from "@/components/navbar" // Barra de navegación
 import { Footer } from "@/components/footer" // Pie de pagina
+import { Toaster } from "sonner";
 
 // Configuration de la fuente Poppins con los pesos que usamos
 // La variable CSS --font-poppins permite usarla en Tailwind
@@ -54,6 +55,11 @@ export default function RootLayout({
         <main>{children}</main>
         {/* Footer se muestra abajo en todas las paginas */}
         <Footer />
+        {/* Toast */}
+        <Toaster
+          position="top-center"
+          richColors
+          duration={2000}/>
       </body>
     </html>
   )

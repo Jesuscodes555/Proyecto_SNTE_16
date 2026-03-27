@@ -13,6 +13,9 @@
 import { Building2, Phone, MapPin } from "lucide-react";
 import type { Empresa } from "@/lib/google-sheets";
 import { useState } from "react";
+import { toast } from "sonner";
+import { CheckCircle } from "lucide-react";
+
 
 // Componente principal de la pagina (Server Component asíncrono)
 // Tiene una parte asíncrona porque necesita esperar los datos de Google Sheets
@@ -22,7 +25,6 @@ export default function EmpresasClient({
   initialEmpresas: Empresa[];
 }) {
   const empresas = initialEmpresas; // Si no hay datos, usamos arreglo vacío para evitar errores
-  const [copiado, setCopiado] = useState(""); // Estado para mostrar mensaje de "copiado" temporalmente
   const [mostrarToast, setMostrarToast] = useState(false); 
   return (
     <>
@@ -68,16 +70,15 @@ export default function EmpresasClient({
               <div
                 onClick={() => {
                   navigator.clipboard.writeText(empresa.codigo)
-                  setMostrarToast(true)
-                  setTimeout(() => { setMostrarToast(false)}, 800);
+                  toast.success("Código copiado correctamente" ,{
+                    icon: <CheckCircle className="h-4 w-4"/>
+                  })
                 }}
-                className="mb-5 cursor-pointer select-none rounded-md bg-primary/10 px-3 py-3 text-center transition hover:bg-primary/20"
+                className="mb-5 cursor-pointer select-none rounded-md bg-primary/10 px-3 py-2 text-center transition hover:bg-primary/20 active:scale-95"
                 title="Haz clic para copiar el código al portapapeles"
               >
                 <p className="mt-1 text-xl font-bold  tracking-wider text-primary">
-                  {copiado === empresa.codigo
-                    ? "Copiado!"
-                    : `Código: ${empresa.codigo}`}
+                  Código: {empresa.codigo}
                 </p>
               </div>
               {/* Icono + nombre */}
@@ -103,13 +104,6 @@ export default function EmpresasClient({
           ))}
         </div>
       </section>
-      {/* Toast para copiar código*/ }
-      { mostrarToast && (
-        <div className="fixed bottom-6 left-1/2 z-50 -translate-x-1/2 rounded-md bg-primary px-4 py-2 text-sm text-white shadow-lg animate-fade-in">
-          Codigo Copiado
-        </div>
-      )
-      } 
     </>
   );
 }

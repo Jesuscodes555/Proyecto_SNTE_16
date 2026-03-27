@@ -195,7 +195,7 @@ export default function HomePage() {
                 </div>
                 <div>
                   <p className="text-sm font-semibold text-card-foreground">
-                    SNTE Delegación D-V-16
+                    Delegación Tec Colima 
                   </p>
                   <p className="text-xs text-muted-foreground">Facebook</p>
                 </div>
@@ -203,8 +203,7 @@ export default function HomePage() {
               {/* Cuerpo de la tarjeta con mensaje y botón */}
               <div className="p-5">
                 <p className="text-center text-sm text-muted-foreground">
-                  El feed de Facebook se cargara con la integración de la pagina
-                  oficial del sindicato.
+                  Medio informativo exclusivo para el personal sindicalizado de la Delegación D-V-16 (sección 61 SNTE)  
                 </p>
                 <div className="mt-4 flex justify-center">
                   <Button asChild variant="outline" size="sm">

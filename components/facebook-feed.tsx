@@ -10,7 +10,7 @@
 *| Como funciona:                                                          | 
 *| 1. Al montarse el componente, carga el script del SDK de Facebook       | 
 *| 2. El SDK busca los elementos con clase "fb-page" y los renderiza       | 
-*| 3. Mientras carga, se muestra un placeholder con boton a Facebook       | 
+*| 3. Mientras carga, se muestra un placeholder con botón a Facebook       | 
 *|                                                                         | 
 *| Nota: usa "use client" porque necesita useEffect para cargar            | 
 *| el script del SDK en el navegador (no funciona en el servidor).         |   
@@ -33,30 +33,30 @@ export function FacebookFeed() {
       const script = document.createElement("script")
       script.src =
         "https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v21.0"
-      script.async = true // Se carga de forma asincrona para no bloquear la pagina
-      script.defer = true // Se ejecuta despues de que el HTML termine de cargar
+      script.async = true // Se carga de forma asíncrona para no bloquear la pagina
+      script.defer = true // Se ejecuta después de que el HTML termine de cargar
       script.crossOrigin = "anonymous"
       document.body.appendChild(script)
 
       // Cuando el script termina de cargar, le decimos al SDK
-      // que parsee (renderice) los elementos de Facebook en nuestro contenedor
+      // que Parsee (renderiza) los elementos de Facebook en nuestro contenedor
       script.onload = () => {
         if ((window as any).FB) {
           ;(window as any).FB.XFBML.parse(containerRef.current)
         }
       }
     } else if ((window as any).FB) {
-      // Si el SDK ya estaba cargado (navegacion entre paginas), solo parseamos
+      // Si el SDK ya estaba cargado (navegación entre paginas), solo Parseamos
       ;(window as any).FB.XFBML.parse(containerRef.current)
     }
   }, []) // [] = solo se ejecuta una vez al montar el componente
 
   return (
     <div className="flex flex-col gap-6">
-      {/* Aviso informativo sobre la integracion */}
+      {/* Aviso informativo sobre la integración */}
       <div className="rounded-lg border border-primary/20 bg-accent p-4">
         <p className="text-sm text-accent-foreground">
-          <span className="font-semibold">Integracion con Facebook:</span>{" "}
+          <span className="font-semibold">Integración con Facebook:</span>{" "}
           Las publicaciones se cargan directamente desde la pagina oficial del
           sindicato. Si no ves contenido, puede ser que tu navegador bloquee las
           cookies de terceros.
@@ -71,7 +71,7 @@ export function FacebookFeed() {
         {/*
           El div fb-page es reconocido por el SDK de Facebook
           data-href: URL de la pagina de Facebook del sindicato
-          data-tabs: que pestanas mostrar (timeline = publicaciones)
+          data-tabs: que pestañas mostrar (timeline = publicaciones)
           data-width/height: dimensiones del plugin
           data-adapt-container-width: se ajusta al ancho del contenedor
         */}
@@ -106,7 +106,7 @@ export function FacebookFeed() {
               <p className="text-center text-sm text-muted-foreground">
                 Cargando publicaciones de Facebook...
               </p>
-              {/* Boton de respaldo para ir directo a Facebook */}
+              {/* Botón de respaldo para ir directo a Facebook */}
               <a
                 href="https://www.facebook.com/profile.php?id=100064841498938"
                 target="_blank"

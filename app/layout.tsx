@@ -57,9 +57,12 @@ export default function RootLayout({
         <Footer />
         {/* Toast */}
         <Toaster
-          position="top-center"
+          position="bottom-center"
           richColors
-          duration={2000}/>
+          duration={2000}
+          toastOptions={{
+            className: "!w-fit text-lg font-semibold !px-3 !py-2 !min-h-0 left-1/2 -translate-x-1/2" 
+          }}/>
       </body>
     </html>
   )

@@ -3,7 +3,7 @@
  *|==============================================================================|
  *| app/empresas/EmpresasClient.tsx                                              |
  *| Autor: Jesús Avalos (21460040)                                               |
- *| Descripción: Componente cliente que muestra el catalogo de empresas con     |
+ *| Descripción: Componente cliente que muestra el catalogo de empresas con      |
  *| descuentos exclusivos para los agremiados del SNTE. Recibe los datos.        |
  *| de las empresas como props desde la pagina principal (Server Component).     |
  *| y permite filtrar por categoría usando un estado local.                      |
@@ -24,8 +24,7 @@ export default function EmpresasClient({
 }: {
   initialEmpresas: Empresa[];
 }) {
-  const empresas = initialEmpresas; // Si no hay datos, usamos arreglo vacío para evitar errores
-  const [mostrarToast, setMostrarToast] = useState(false); 
+  const empresas = initialEmpresas; // Si no hay datos, usamos arreglo vacío para evitar errores 
   return (
     <>
       {/* Encabezado de la pagina con titulo y descripción */}
@@ -70,7 +69,7 @@ export default function EmpresasClient({
               <div
                 onClick={() => {
                   navigator.clipboard.writeText(empresa.codigo)
-                  toast.success("Código copiado correctamente" ,{
+                  toast.success("Código copiado" ,{
                     icon: <CheckCircle className="h-4 w-4"/>
                   })
                 }}

@@ -61,7 +61,7 @@ export default function RootLayout({
           richColors
           duration={2000}
           toastOptions={{
-            className: "!w-fit text-lg font-semibold !px-3 !py-2 !min-h-0 left-1/2 -translate-x-1/2" 
+            className: "!w-[90%] max-w-sm text-lg font-semibold sn:w-fit !px-3 !py-2 !min-h-0 left-1/2 -translate-x-1/2" 
           }}/>
       </body>
     </html>

@@ -68,7 +68,17 @@ export default function EmpresasClient({
               {/* Código de la empresa */}
               <div
                 onClick={() => {
-                  navigator.clipboard.writeText(empresa.codigo)
+                  if (navigator.clipboard && window.isSecureContext) {
+                    navigator.clipboard.writeText(empresa.codigo)
+                  } else {
+                    //Fallback para navegadores antiguos o no seguros
+                    const textArea = document.createElement("textarea")
+                    textArea.value = empresa.codigo
+                    document.body.appendChild(textArea)
+                    textArea.select()
+                    document.execCommand("copy")
+                    document.body.removeChild(textArea)
+                  }
                   toast.success("Código copiado" ,{
                     icon: <CheckCircle className="h-4 w-4"/>
                   })

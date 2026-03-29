@@ -159,7 +159,7 @@ export default function SindicatoPage() {
                   <Eye className="h-5 w-5 text-accent-foreground" />
                 </div>
                 <h2 className="text-xl font-bold text-card-foreground">
-                  Vision
+                  Visión
                 </h2>
               </div>
               <p className="mt-4 leading-relaxed text-muted-foreground">

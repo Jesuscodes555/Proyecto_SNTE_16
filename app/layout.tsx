@@ -57,11 +57,29 @@ export default function RootLayout({
         <Footer />
         {/* Toast */}
         <Toaster
-          position="bottom-center"
+          position="top-center"
           richColors
-          duration={2000}
+          duration={1500}
+          //@ts-ignore
+          containerStyle= {{
+              left: "50%",
+              transform: "translateX(-50%)",
+              width: "100%",
+              maxWidth: "100%",
+              paddingLeft: "12px",
+              paddingRight: "12px",
+          }}
           toastOptions={{
-            className: "!w-[90%] max-w-sm text-lg font-semibold sn:w-fit !px-3 !py-2 !min-h-0 left-1/2 -translate-x-1/2" 
+            style: {
+
+              maxWidth: "380px",
+              textAlign: "center",
+              padding: "12px 16px",
+              fontSize: "18px",
+              fontWeight: "600",
+              justifyContent: "center"
+            },
+          // className: "w-[92vw] max-w-[320px] sm:max-w-sm text-lg font-semibold px-4 py-3 flex items-center justify-center text-center"
           }}/>
       </body>
     </html>

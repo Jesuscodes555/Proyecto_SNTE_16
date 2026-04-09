@@ -1,25 +1,24 @@
 /*
-*|=========================================================================|
-*| app/contacto/page.tsx                                                   |  
-*| Autor: Jesús Avalos (21460040)                                          | 
-*| Descripción: Pagina de Contacto con toda la información para            |
-*| comunicarse con la delegación sindical. Incluye:                        |
-*| - Tarjetas con dirección, teléfono, correo y horario                    |
-*| - Mapa embebido de Google Maps con la ubicación del Tec                 |
-*| - Datos de la Secretaria General                                        |
-*|=========================================================================|
-*/
+ *|=========================================================================|
+ *| app/contacto/page.tsx                                                   |
+ *| Autor: Jesús Avalos (21460040)                                          |
+ *| Descripción: Pagina de Contacto con toda la información para            |
+ *| comunicarse con la delegación sindical. Incluye:                        |
+ *| - Tarjetas con dirección, teléfono, correo y horario                    |
+ *| - Mapa embebido de Google Maps con la ubicación del Tec                 |
+ *| - Datos de la Secretaria General                                        |
+ *|=========================================================================|
+ */
 
-
-import { Phone, Mail, MapPin, Clock } from "lucide-react" // Iconos de contacto
-import type { Metadata } from "next"
+import { Phone, Mail, MapPin, Clock } from "lucide-react"; // Iconos de contacto
+import type { Metadata } from "next";
 
 // Metadatos SEO
 export const metadata: Metadata = {
   title: "Contacto | SNTE Delegación D-V-16",
   description:
     "Contacta a la Delegación D-V-16 del SNTE. Dirección, teléfono, correo y horario de atención en el Instituto Tecnológico de Colima.",
-}
+};
 
 // Arreglo con la información de contacto
 // Cada elemento tiene un icono, etiqueta, valor y opcionalmente un href (link)
@@ -46,7 +45,7 @@ const contactInfo = [
     label: "Horario de atención",
     value: "Lunes a viernes, 12:00 p.m. a 6:00 p.m.",
   },
-]
+];
 
 export default function ContactoPage() {
   return (
@@ -145,7 +144,7 @@ export default function ContactoPage() {
             Secretaría General
           </h2>
           <p className="mt-2 text-lg text-muted-foreground">
-            Dra. Xiomara Clementina Rodriguez Guzman
+            Dra. Xiomara Clementina Rodríguez Guzmán
           </p>
           <p className="mt-1 text-sm text-muted-foreground">
             Delegación D-V-16 de la Sección 61 del SNTE
@@ -166,5 +165,5 @@ export default function ContactoPage() {
         </div>
       </section>
     </>
-  )
+  );
 }

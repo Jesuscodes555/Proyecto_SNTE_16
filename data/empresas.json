@@ -1,19 +1,19 @@
 [
   {
-    "_comentario": "Este archivo es el respaldo local. Los datos principales se leen de Google Sheets. Si la API de Google falla, la pagina usa estos datos automaticamente.",
+    "_comentario": "Este archivo es el respaldo local. Los datos principales se leen de Google Sheets. Si la API de Google falla, la pagina usa estos datos automáticamente.",
     "codigo": "",
     "nombre": "--- DATOS DE RESPALDO ---",
     "descripcion": ""
   },
   {
     "codigo": "OPT001",
-    "nombre": "Optica Vision Plus",
+    "nombre": "Óptica Vision Plus",
     "descripcion": "20% de descuento en lentes graduados y examen de la vista gratuito para agremiados."
   },
   {
     "codigo": "FAR001",
     "nombre": "Farmacia del Pueblo",
-    "descripcion": "15% de descuento en medicamentos genericos y 10% en patentes."
+    "descripcion": "15% de descuento en medicamentos genéricos y 10% en patentes."
   },
   {
     "codigo": "DNT001",
@@ -23,16 +23,16 @@
   {
     "codigo": "GYM001",
     "nombre": "Gym Fitness Total",
-    "descripcion": "Mensualidad con 25% de descuento para trabajadores del Tecnologico."
+    "descripcion": "Mensualidad con 25% de descuento para trabajadores del Tecnológico."
   },
   {
     "codigo": "LIB001",
-    "nombre": "Libreria Academica",
-    "descripcion": "10% en libros de texto y material de oficina. Envio gratis a domicilio."
+    "nombre": "Librería Académica",
+    "descripcion": "10% en libros de texto y material de oficina. Envió gratis a domicilio."
   },
   {
     "codigo": "TAL001",
-    "nombre": "Taller Mecanico Hermanos Lopez",
-    "descripcion": "Servicio de mantenimiento preventivo con 15% de descuento. Diagnostico gratis."
+    "nombre": "Taller Mecánico Hermanos Lopez",
+    "descripcion": "Servicio de mantenimiento preventivo con 15% de descuento. Diagnóstico gratis."
   }
 ]

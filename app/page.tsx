@@ -1,18 +1,18 @@
-/* 
-*|==============================================================================|
-*| app/page.tsx                                                                 | 
-*| Autor: Jesús Avalos (21460040)                                               |
-*| Descripcion: Pagina de Inicio del sitio web. Es la primera                   |
-*| pagina que ve el usuario al entrar. Contiene:                                |
-*| - Hero: sección principal con imagen de fondo y botones                      |
-*| - Tarjetas rápidas: accesos directos a beneficios, empresas, noticias        |
-*| - Bienvenida: sección informativa con imagen                                 |
-*| - Preview de noticias: muestra el feed de Facebook                           |  
-*| - Preview de contacto: resumen de como contactar al sindicato                |
-*|==============================================================================|
-*/ 
-import Link from "next/link"
-import Image from "next/image" // Componente de Next.js para imágenes optimizadas
+/*
+ *|==============================================================================|
+ *| app/page.tsx                                                                 |
+ *| Autor: Jesús Avalos (21460040)                                               |
+ *| Descripción: Pagina de Inicio del sitio web. Es la primera                   |
+ *| pagina que ve el usuario al entrar. Contiene:                                |
+ *| - Hero: sección principal con imagen de fondo y botones                      |
+ *| - Tarjetas rápidas: accesos directos a beneficios, empresas, noticias        |
+ *| - Bienvenida: sección informativa con imagen                                 |
+ *| - Preview de noticias: muestra el feed de Facebook                           |
+ *| - Preview de contacto: resumen de como contactar al sindicato                |
+ *|==============================================================================|
+ */
+import Link from "next/link";
+import Image from "next/image"; // Componente de Next.js para imágenes optimizadas
 import {
   ArrowRight,
   Shield,
@@ -21,8 +21,8 @@ import {
   Phone,
   Mail,
   MapPin,
-} from "lucide-react" // Iconos que usamos en la pagina
-import { Button } from "@/components/ui/button" // Componente de botón de shadcn/ui
+} from "lucide-react"; // Iconos que usamos en la pagina
+import { Button } from "@/components/ui/button"; // Componente de botón de shadcn/ui
 
 export default function HomePage() {
   return (
@@ -53,7 +53,7 @@ export default function HomePage() {
           {/* Subtitulo descriptivo */}
           <p className="mt-5 max-w-xl text-pretty text-base leading-relaxed text-secondary-foreground/80 md:text-lg">
             Representamos y apoyamos a los trabajadores del Instituto
-            Tecnológico de Colima. Conoce tus beneficios, noticias y mas.
+            Tecnológico de Colima. Conoce tus beneficios, noticias y más.
           </p>
           {/* Botones de acción */}
           <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
@@ -136,10 +136,10 @@ export default function HomePage() {
               Comprometidos con los trabajadores del Tecnológico de Colima
             </h2>
             <p className="mt-4 text-pretty leading-relaxed text-muted-foreground">
-              La Delegación D-V-16 de la Sección 61 del SNTE trabaja
-              diariamente para garantizar los derechos laborales, promover el
-              bienestar y ofrecer beneficios reales a todos los agremiados del
-              Instituto Tecnológico de Colima.
+              La Delegación D-V-16 de la Sección 61 del SNTE trabaja diariamente
+              para garantizar los derechos laborales, promover el bienestar y
+              ofrecer beneficios reales a todos los agremiados del Instituto
+              Tecnológico de Colima.
             </p>
             <p className="mt-3 text-pretty leading-relaxed text-muted-foreground">
               Nuestro compromiso es brindar un espacio de confianza,
@@ -195,7 +195,7 @@ export default function HomePage() {
                 </div>
                 <div>
                   <p className="text-sm font-semibold text-card-foreground">
-                    Delegación Tec Colima 
+                    Delegación Tec Colima
                   </p>
                   <p className="text-xs text-muted-foreground">Facebook</p>
                 </div>
@@ -203,7 +203,8 @@ export default function HomePage() {
               {/* Cuerpo de la tarjeta con mensaje y botón */}
               <div className="p-5">
                 <p className="text-center text-sm text-muted-foreground">
-                  Medio informativo exclusivo para el personal sindicalizado de la Delegación D-V-16 (sección 61 SNTE)  
+                  Medio informativo exclusivo para el personal sindicalizado de
+                  la Delegación D-V-16 (sección 61 SNTE)
                 </p>
                 <div className="mt-4 flex justify-center">
                   <Button asChild variant="outline" size="sm">
@@ -287,5 +288,5 @@ export default function HomePage() {
         </div>
       </section>
     </>
-  )
+  );
 }

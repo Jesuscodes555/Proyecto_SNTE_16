@@ -50,7 +50,7 @@ export function Navbar() {
           {/* Cuadro naranja con la S como placeholder del logo */}
           <div className="flex h-10 w-10 items-center justify-center rounded-lg overflow-hidden">
             <Image
-              src="/images/Logo.jpg"
+              src="/images/logo.jpg"
               alt="Logo"
               width={44}
               height={44}

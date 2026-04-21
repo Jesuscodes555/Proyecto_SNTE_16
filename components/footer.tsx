@@ -27,7 +27,7 @@ export function Footer() {
               {/* Placeholder del logo - mismo estilo que el navbar */}
               <div className="flex h-10 w-10 items-center justify-center rounded-lg overflow-hidden">
                 <Image
-                  src="/images/Logo.jpg"
+                  src="/images/logo.jpg"
                   alt="Logo"
                   width={40}
                   height={40}

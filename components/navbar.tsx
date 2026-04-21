@@ -1,22 +1,22 @@
 /*
-*|=========================================================================|
-*| components/navbar.tsx                                                   |     
-*| Autor: Jesus Avalos (21460040)                                          | 
-*| Descripcion: Componente de la barra de navegación principal.            |   
-*| Es "sticky" (se queda fija arriba al hacer scroll) y tiene              |   
-*| version de escritorio (links horizontales) y version móvil              | 
-*| (menu hamburguesa que se abre/cierra). Usa "use client"                 | 
-*| porque necesita useState para controlar el menu móvil.                  |      
-*|=========================================================================|
-*/
+ *|=========================================================================|
+ *| components/navbar.tsx                                                   |
+ *| Autor: Jesus Avalos (21460040)                                          |
+ *| Descripcion: Componente de la barra de navegación principal.            |
+ *| Es "sticky" (se queda fija arriba al hacer scroll) y tiene              |
+ *| version de escritorio (links horizontales) y version móvil              |
+ *| (menu hamburguesa que se abre/cierra). Usa "use client"                 |
+ *| porque necesita useState para controlar el menu móvil.                  |
+ *|=========================================================================|
+ */
 
-"use client"
+"use client";
 
-import Link from "next/link" // Componente de Next.js para navegación sin recargar la pagina
-import { usePathname } from "next/navigation" // Hook para saber en que pagina estamos
-import { useState } from "react" // Hook de React para manejar estado (menu abierto/cerrado)
-import { Menu, X } from "lucide-react" // Iconos de hamburguesa y cerrar
-import { cn } from "@/lib/utils" // Utilidad para combinar clases CSS condicionalmente
+import Link from "next/link"; // Componente de Next.js para navegación sin recargar la pagina
+import { usePathname } from "next/navigation"; // Hook para saber en que pagina estamos
+import { useState } from "react"; // Hook de React para manejar estado (menu abierto/cerrado)
+import { Menu, X } from "lucide-react"; // Iconos de hamburguesa y cerrar
+import { cn } from "@/lib/utils"; // Utilidad para combinar clases CSS condicionalmente
 
 // Arreglo con todos los links de navegación
 // href: la ruta de la pagina, label: el texto que se muestra
@@ -27,13 +27,13 @@ const links = [
   { href: "/empresas", label: "Empresas" },
   { href: "/noticias", label: "Noticias" },
   { href: "/contacto", label: "Contacto" },
-]
+];
 
 export function Navbar() {
   // usePathname nos dice la ruta actual, ej: "/beneficios"
-  const pathname = usePathname()
+  const pathname = usePathname();
   // Estado para controlar si el menu móvil esta abierto o cerrado
-  const [mobileOpen, setMobileOpen] = useState(false)
+  const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
     // header sticky: se queda pegado arriba al hacer scroll
@@ -48,9 +48,13 @@ export function Navbar() {
         >
           {/* Cuadro naranja con la S como placeholder del logo */}
           <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary">
-            <span className="text-lg font-bold text-primary-foreground">
-              S
-            </span>
+            <img
+              src="/assets/images/Logo.jpg"
+              alt="Logo"
+              width={40}
+              height={40}
+            />
+            {/* <span className="text-lg font-bold text-primary-foreground">S</span> */}
           </div>
           <div className="flex flex-col">
             <span className="text-sm font-semibold leading-tight text-foreground">
@@ -73,7 +77,7 @@ export function Navbar() {
                   // Si es la pagina actual, se resalta con fondo de acento
                   pathname === link.href
                     ? "bg-accent text-accent-foreground"
-                    : "text-muted-foreground hover:bg-muted hover:text-foreground"
+                    : "text-muted-foreground hover:bg-muted hover:text-foreground",
                 )}
               >
                 {link.label}
@@ -111,7 +115,7 @@ export function Navbar() {
                     "block rounded-md px-3 py-2.5 text-sm font-medium transition-colors",
                     pathname === link.href
                       ? "bg-accent text-accent-foreground"
-                      : "text-muted-foreground hover:bg-muted hover:text-foreground"
+                      : "text-muted-foreground hover:bg-muted hover:text-foreground",
                   )}
                 >
                   {link.label}
@@ -122,5 +126,5 @@ export function Navbar() {
         </div>
       )}
     </header>
-  )
+  );
 }

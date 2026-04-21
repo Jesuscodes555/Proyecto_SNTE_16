@@ -1,17 +1,18 @@
- /*
-*|=========================================================================|
-*| components/footer.tsx                                                   |     
-*| Autor: Jesus Avalos (21460040)                                          | 
-*| Descripcion: Componente del pie de pagina que se muestra en             | 
-*| todas las paginas del sitio. Contiene la información del                | 
-*| sindicato, links de navegación, datos de contacto y el link             | 
-*| al aviso de privacidad. Usa el color "secondary" (azul oscuro)          | 
-*| como fondo para diferenciarlo del contenido principal. El texto es      |          
-*|=========================================================================|
-*/
+/*
+ *|=========================================================================|
+ *| components/footer.tsx                                                   |
+ *| Autor: Jesus Avalos (21460040)                                          |
+ *| Descripcion: Componente del pie de pagina que se muestra en             |
+ *| todas las paginas del sitio. Contiene la información del                |
+ *| sindicato, links de navegación, datos de contacto y el link             |
+ *| al aviso de privacidad. Usa el color "secondary" (azul oscuro)          |
+ *| como fondo para diferenciarlo del contenido principal. El texto es      |
+ *|=========================================================================|
+ */
 
-import Link from "next/link"
-import { Phone, Mail, MapPin } from "lucide-react" // Iconos de contacto
+import Link from "next/link";
+import { Phone, Mail, MapPin } from "lucide-react"; // Iconos de contacto
+import Image from "next/image";
 
 export function Footer() {
   return (
@@ -24,15 +25,17 @@ export function Footer() {
           <div className="flex flex-col gap-3">
             <div className="flex items-center gap-3">
               {/* Placeholder del logo - mismo estilo que el navbar */}
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary">
-                <span className="text-lg font-bold text-primary-foreground">
-                  S
-                </span>
+              <div className="flex h-10 w-10 items-center justify-center rounded-lg overflow-hidden">
+                <Image
+                  src="/images/Logo.jpg"
+                  alt="Logo"
+                  width={40}
+                  height={40}
+                  className="transition-transform duration-200 hover:scale-105"
+                />
               </div>
               <div>
-                <p className="text-sm font-semibold">
-                  SNTE Delegación D-V-16
-                </p>
+                <p className="text-sm font-semibold">SNTE Delegación D-V-16</p>
                 <p className="text-xs text-secondary-foreground/70">
                   Sección 61
                 </p>
@@ -115,5 +118,5 @@ export function Footer() {
         </div>
       </div>
     </footer>
-  )
+  );
 }

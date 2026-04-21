@@ -17,6 +17,7 @@ import { usePathname } from "next/navigation"; // Hook para saber en que pagina 
 import { useState } from "react"; // Hook de React para manejar estado (menu abierto/cerrado)
 import { Menu, X } from "lucide-react"; // Iconos de hamburguesa y cerrar
 import { cn } from "@/lib/utils"; // Utilidad para combinar clases CSS condicionalmente
+import Image from "next/image"; // Componente de Next.js para optimizar imágenes
 
 // Arreglo con todos los links de navegación
 // href: la ruta de la pagina, label: el texto que se muestra
@@ -47,12 +48,13 @@ export function Navbar() {
           onClick={() => setMobileOpen(false)}
         >
           {/* Cuadro naranja con la S como placeholder del logo */}
-          <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary">
-            <img
-              src="/assets/images/Logo.jpg"
+          <div className="flex h-10 w-10 items-center justify-center rounded-lg overflow-hidden">
+            <Image
+              src="/images/Logo.jpg"
               alt="Logo"
-              width={40}
-              height={40}
+              width={44}
+              height={44}
+              className="transition-transform duration-200 hover:scale-105"
             />
             {/* <span className="text-lg font-bold text-primary-foreground">S</span> */}
           </div>

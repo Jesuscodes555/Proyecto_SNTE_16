@@ -2,7 +2,7 @@
  *|=========================================================================|
  *| components/footer.tsx                                                   |
  *| Autor: Jesus Avalos (21460040)                                          |
- *| Descripcion: Componente del pie de pagina que se muestra en             |
+ *| Descripción: Componente del pie de pagina que se muestra en             |
  *| todas las paginas del sitio. Contiene la información del                |
  *| sindicato, links de navegación, datos de contacto y el link             |
  *| al aviso de privacidad. Usa el color "secondary" (azul oscuro)          |
@@ -21,7 +21,7 @@ export function Footer() {
       <div className="mx-auto max-w-7xl px-6 py-12">
         {/* Grid de 3 columnas en escritorio, 1 en móvil */}
         <div className="grid gap-8 md:grid-cols-3">
-          {/* Columna 1: Logo y descripcion del sindicato */}
+          {/* Columna 1: Logo y descripción del sindicato */}
           <div className="flex flex-col gap-3">
             <div className="flex items-center gap-3">
               {/* Placeholder del logo - mismo estilo que el navbar */}

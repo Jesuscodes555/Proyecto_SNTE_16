@@ -113,7 +113,7 @@ export default function ContactoPage() {
               Ubicación
             </span>
             <h2 className="mt-2 text-balance text-2xl font-bold text-foreground md:text-3xl">
-              Donde encontrarnos
+              Dónde encontrarnos
             </h2>
             <p className="mx-auto mt-3 max-w-lg text-muted-foreground">
               La oficina sindical se encuentra dentro de las instalaciones del
@@ -124,7 +124,7 @@ export default function ContactoPage() {
           <div className="mt-10 overflow-hidden rounded-lg border border-border shadow-sm">
             <iframe
               title="Ubicación del Instituto Tecnológico de Colima"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.0725!2d-103.7364!3d19.2665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x84255ab6164e1d21%3A0x7e9e7e8f1b1f1b1f!2sInstituto%20Tecnol%C3%B3gico%20de%20Colima!5e0!3m2!1ses!2smx!4v1700000000000!5m2!1ses!2smx"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3766.469946412322!2d-103.72625458964036!3d19.261919146035183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x84255ac989b702cf%3A0xd6b8fbaecb0c480f!2sTecNM%20-%20Campus%20Colima!5e0!3m2!1ses-419!2smx!4v1780101351324!5m2!1ses-419!2smx"
               width="100%"
               height="400"
               style={{ border: 0 }}
@@ -141,7 +141,7 @@ export default function ContactoPage() {
       <section className="mx-auto max-w-7xl px-6 py-16">
         <div className="mx-auto max-w-2xl rounded-lg border border-border bg-card p-8 text-center">
           <h2 className="text-xl font-bold text-card-foreground">
-            Secretaría General
+            Secretaria General
           </h2>
           <p className="mt-2 text-lg text-muted-foreground">
             Dra. Xiomara Clementina Rodríguez Guzmán

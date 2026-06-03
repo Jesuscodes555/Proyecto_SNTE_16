@@ -1,26 +1,26 @@
 /*
-*|=========================================================================|
-*| app/sindicato/page.tsx                                                  |  
-*| Autor: Jesús Avalos (21460040)                                          | 
-*| Descripción: Pagina "Sindicato" que muestra la información              | 
-*| institucional de la Delegación D-V-16. Incluye:                         | 
-*| - Historia y compromiso de la delegación                                | 
-*| - Misión y Visión en tarjetas lado a lado                               |
-*| - Valores sindicales en grid de 4 columnas                              | 
-*| - Estructura organizacional (mesa directiva)                            | 
-*|=========================================================================|
-*/
+ *|=========================================================================|
+ *| app/sindicato/page.tsx                                                  |
+ *| Autor: Jesús Avalos (21460040)                                          |
+ *| Descripción: Pagina "Sindicato" que muestra la información              |
+ *| institucional de la Delegación D-V-16. Incluye:                         |
+ *| - Historia y compromiso de la delegación                                |
+ *| - Misión y Visión en tarjetas lado a lado                               |
+ *| - Valores sindicales en grid de 4 columnas                              |
+ *| - Estructura organizacional (mesa directiva)                            |
+ *|=========================================================================|
+ */
 
-import Image from "next/image"
-import { Target, Eye, Heart, Users, BookOpen, Handshake } from "lucide-react"
-import type { Metadata } from "next"
+import Image from "next/image";
+import { Target, Eye, Heart, Users, BookOpen, Handshake } from "lucide-react";
+import type { Metadata } from "next";
 
 // Metadatos SEO de la página
 export const metadata: Metadata = {
   title: "Sindicato | SNTE Delegación D-V-16",
   description:
     "Conoce la misión, visión, valores y estructura de la Delegación D-V-16 de la Sección 61 del SNTE en el Instituto Tecnológico de Colima.",
-}
+};
 
 // Arreglo de valores sindicales con su icono, título y descripción
 // Cada valor se renderiza como una tarjeta en el grid
@@ -49,32 +49,40 @@ const values = [
     description:
       "Defendemos los derechos de cada trabajador con apego a la ley y la equidad.",
   },
-]
+];
 
 // Arreglo con los cargos de la mesa directiva
 // Los que dicen "Por confirmar" se actualizan cuando se tengan los nombres
 const structure = [
   {
-    cargo: "Secretaría General",
-    nombre: "Dra. Xiomara Clementina Rodríguez Guzmán",
+    cargo: "Secretario General",
+    nombre: "Xiomara Clementina Rodríguez Guzmán",
   },
   {
-    cargo: "Secretaria de Trabajo y Conflictos",
-    nombre: "Por confirmar",
+    cargo: "Secretario de Organización",
+    nombre: "María Heidi Del Pilar Vizcaíno Granados",
   },
   {
-    cargo: "Secretaria de Organización",
-    nombre: "Por confirmar",
+    cargo: "Secretario de Trabajo y Conflictos",
+    nombre: "Jorge Alejandro Chávez Larios",
   },
   {
-    cargo: "Secretaria de Finanzas",
-    nombre: "Por confirmar",
+    cargo: "Secretario de Finanzas",
+    nombre: "Mario Alfredo Benitez Montes",
   },
   {
-    cargo: "Secretaria de Actas y Acuerdos",
-    nombre: "Por confirmar",
+    cargo: "Secretario de Escalafón y Promoción",
+    nombre: "Gloria Monserrat Ayala Arreola",
   },
-]
+  {
+    cargo: "Secretario de Orientación Ideológica y Sindical",
+    nombre: "Teresa Alejandra Calleros Rodríguez",
+  },
+  {
+    cargo: "Secretario de Previsión y Asistencia Social",
+    nombre: "Sael Voriz Hoyos",
+  },
+];
 
 export default function SindicatoPage() {
   return (
@@ -115,15 +123,15 @@ export default function SindicatoPage() {
               Nuestra historia y compromiso
             </h2>
             <p className="mt-4 leading-relaxed text-muted-foreground">
-              La Delegación D-V-16 forma parte de la Sección 61 del SNTE y
-              opera dentro del Instituto Tecnológico de Colima. Nuestra labor se
+              La Delegación D-V-16 forma parte de la Sección 61 del SNTE y opera
+              dentro del Instituto Tecnológico de Colima. Nuestra labor se
               centra en representar, apoyar y brindar beneficios laborales y
               sociales a todos los agremiados.
             </p>
             <p className="mt-3 leading-relaxed text-muted-foreground">
               En conjunto con el Tecnológico Nacional de México, formamos un
-              entorno institucional que combina educación, organización laboral y
-              servicios orientados al bienestar de la comunidad tecnológica.
+              entorno institucional que combina educación, organización laboral
+              y servicios orientados al bienestar de la comunidad tecnológica.
             </p>
           </div>
         </div>
@@ -250,5 +258,5 @@ export default function SindicatoPage() {
         </div>
       </section>
     </>
-  )
+  );
 }

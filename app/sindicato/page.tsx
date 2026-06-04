@@ -2,7 +2,7 @@
  *|=========================================================================|
  *| app/sindicato/page.tsx                                                  |
  *| Autor: Jesús Avalos (21460040)                                          |
- *| Descripción: Pagina "Sindicato" que muestra la información              |
+ *| Descripción: Página "Sindicato" que muestra la información              |
  *| institucional de la Delegación D-V-16. Incluye:                         |
  *| - Historia y compromiso de la delegación                                |
  *| - Misión y Visión en tarjetas lado a lado                               |
@@ -68,7 +68,7 @@ const structure = [
   },
   {
     cargo: "Secretario de Finanzas",
-    nombre: "Mario Alfredo Benitez Montes",
+    nombre: "Mario Alfredo Benítez Montes",
   },
   {
     cargo: "Secretario de Escalafón y Promoción",
@@ -155,7 +155,7 @@ export default function SindicatoPage() {
               <p className="mt-4 leading-relaxed text-muted-foreground">
                 Representar y defender los derechos laborales de los
                 trabajadores del Instituto Tecnológico de Colima, promoviendo su
-                bienestar integral a traves de la gestión de beneficios, la
+                bienestar integral                 a través de la gestión de beneficios, la
                 capacitación continua y la comunicación efectiva entre los
                 agremiados y las autoridades institucionales.
               </p>

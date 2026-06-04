@@ -2,7 +2,7 @@
  *|=========================================================================|
  *| app/noticias/page.tsx                                                   |
  *| Autor: Jesús Avalos (21460040)                                          |
- *| Descripción: Pagina de Noticias que integra el feed de Facebook         |
+ *| Descripción: Página de Noticias que integra el feed de Facebook         |
  *| de la página oficial del sindicato. Usa el componente                   |
  *| FacebookFeed que carga el plugin oficial de Meta (Facebook              |
  *| Page Plugin) para mostrar las publicaciones en tiempo real.             |

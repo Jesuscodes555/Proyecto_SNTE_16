@@ -1,10 +1,10 @@
 /*
  *|=========================================================================|
  *| app/layout.tsx                                                          |
- *| Autor: Jesus Avalos (21460040)                                          |
+ *| Autor: Jesús Avalos (21460040)                                          |
  *| Descripción: Layout principal de la aplicación. Este archivo            |
- *| envuelve TODAS las paginas del sitio, es decir, todo lo que             |
- *| se ponga aquí (navbar, footer, fuentes) aparece en cada pagina.         |
+ *| envuelve TODAS las páginas del sitio, es decir, todo lo que             |
+ *| se ponga aquí (navbar, footer, fuentes) aparece en cada página.         |
  *| Next.js usa este archivo como la estructura base del HTML.              |
  *|=========================================================================|
  */
@@ -25,11 +25,11 @@ const poppins = Poppins({
   variable: "--font-poppins",
 });
 
-// Metadatos de la pagina para SEO (aparecen en Google y en la pestaña del navegador)
+// Metadatos de la página para SEO (aparecen en Google y en la pestaña del navegador)
 export const metadata: Metadata = {
   title: "SNTE Delegación D-V-16 | Instituto Tecnológico de Colima",
   description:
-    "Pagina web oficial de la Delegación D-V-16 de la Sección 61 del SNTE en el Instituto Tecnológico de Colima. Información sindical, beneficios, noticias y contacto.",
+    "Página web oficial de la Delegación D-V-16 de la Sección 61 del SNTE en el Instituto Tecnológico de Colima. Información sindical, beneficios, noticias y contacto.",
 };
 
 // Color del tema para navegadores móviles (la barrita de arriba en Android)
@@ -38,22 +38,22 @@ export const viewport: Viewport = {
 };
 
 // Componente RootLayout: estructura HTML base de todo el sitio
-// Recibe {children} que es la pagina actual que se esta mostrando
+// Recibe {children} que es la página actual que se está mostrando
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    // lang="es" para indicar a los navegadores que el sitio esta en español
+    // lang="es" para indicar a los navegadores que el sitio está en español
     <html lang="es">
       {/* Aplicamos la variable de la fuente y la clase antialiased para suavizar el texto */}
       <body className={`${poppins.variable} font-sans antialiased`}>
-        {/* Navbar se muestra arriba en todas las paginas */}
+        {/* Navbar se muestra arriba en todas las páginas */}
         <Navbar />
-        {/* main contiene el contenido de cada pagina individual */}
+        {/* main contiene el contenido de cada página individual */}
         <main>{children}</main>
-        {/* Footer se muestra abajo en todas las paginas */}
+        {/* Footer se muestra abajo en todas las páginas */}
         <Footer />
         {/* Toast */}
         <Toaster

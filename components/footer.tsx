@@ -1,9 +1,9 @@
 /*
  *|=========================================================================|
  *| components/footer.tsx                                                   |
- *| Autor: Jesus Avalos (21460040)                                          |
- *| Descripción: Componente del pie de pagina que se muestra en             |
- *| todas las paginas del sitio. Contiene la información del                |
+ *| Autor: Jesús Avalos (21460040)                                          |
+ *| Descripción: Componente del pie de página que se muestra en             |
+ *| todas las páginas del sitio. Contiene la información del                |
  *| sindicato, links de navegación, datos de contacto y el link             |
  *| al aviso de privacidad. Usa el color "secondary" (azul oscuro)          |
  *| como fondo para diferenciarlo del contenido principal. El texto es      |

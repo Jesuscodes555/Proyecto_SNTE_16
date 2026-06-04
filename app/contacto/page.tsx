@@ -2,7 +2,7 @@
  *|=========================================================================|
  *| app/contacto/page.tsx                                                   |
  *| Autor: Jesús Avalos (21460040)                                          |
- *| Descripción: Pagina de Contacto con toda la información para            |
+ *| Descripción: Página de Contacto con toda la información para            |
  *| comunicarse con la delegación sindical. Incluye:                        |
  *| - Tarjetas con dirección, teléfono, correo y horario                    |
  *| - Mapa embebido de Google Maps con la ubicación del Tec                 |

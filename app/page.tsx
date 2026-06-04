@@ -2,13 +2,13 @@
  *|==============================================================================|
  *| app/page.tsx                                                                 |
  *| Autor: Jesús Avalos (21460040)                                               |
- *| Descripción: Pagina de Inicio del sitio web. Es la primera                   |
- *| pagina que ve el usuario al entrar. Contiene:                                |
+ *| Descripción: Página de Inicio del sitio web. Es la primera                   |
+ *| página que ve el usuario al entrar. Contiene:                                |
  *| - Hero: sección principal con imagen de fondo y botones                      |
  *| - Tarjetas rápidas: accesos directos a beneficios, empresas, noticias        |
  *| - Bienvenida: sección informativa con imagen                                 |
  *| - Preview de noticias: muestra el feed de Facebook                           |
- *| - Preview de contacto: resumen de como contactar al sindicato                |
+ *| - Preview de contacto: resumen de cómo contactar al sindicato                |
  *|==============================================================================|
  */
 import Link from "next/link";
@@ -84,13 +84,13 @@ export default function HomePage() {
             {
               icon: Shield,
               title: "Beneficios",
-              desc: "Seguro de vida, prestamos, capacitación y mas para ti y tu familia.",
+              desc: "Seguro de vida, préstamos, capacitación y más para ti y tu familia.",
               href: "/beneficios",
             },
             {
               icon: Building2,
               title: "Empresas con Descuentos",
-              desc: "Catalogo de empresas locales con convenios exclusivos para agremiados.",
+              desc: "Catálogo de empresas locales con convenios exclusivos para agremiados.",
               href: "/empresas",
             },
             {
@@ -117,7 +117,7 @@ export default function HomePage() {
               </p>
               {/* Link "Ver mas" con flecha que aparece al hacer hover */}
               <span className="mt-auto flex items-center gap-1 text-sm font-medium text-primary transition-colors group-hover:text-primary/80">
-                {"Ver mas"} <ArrowRight className="h-3.5 w-3.5" />
+                {"Ver más"} <ArrowRight className="h-3.5 w-3.5" />
               </span>
             </Link>
           ))}
@@ -147,7 +147,7 @@ export default function HomePage() {
               trabajadora.
             </p>
             <Button asChild className="mt-6 bg-transparent" variant="outline">
-              <Link href="/sindicato">Conoce mas sobre nosotros</Link>
+              <Link href="/sindicato">Conoce más sobre nosotros</Link>
             </Button>
           </div>
           {/* Imagen del equipo sindical */}
@@ -171,7 +171,7 @@ export default function HomePage() {
               Noticias y Eventos
             </span>
             <h2 className="mt-2 text-balance text-2xl font-bold text-foreground md:text-3xl">
-              Ultimas publicaciones
+              Últimas publicaciones
             </h2>
             <p className="mx-auto mt-3 max-w-lg text-muted-foreground">
               Síguenos en Facebook para estar al tanto de todas las actividades

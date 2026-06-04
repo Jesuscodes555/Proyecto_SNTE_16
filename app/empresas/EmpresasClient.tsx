@@ -3,9 +3,9 @@
  *|==============================================================================|
  *| app/empresas/EmpresasClient.tsx                                              |
  *| Autor: Jesús Avalos (21460040)                                               |
- *| Descripción: Componente cliente que muestra el catalogo de empresas con      |
- *| descuentos exclusivos para los agremiados del SNTE. Recibe los datos.        |
- *| de las empresas como props desde la pagina principal (Server Component).     |
+ *| Descripción: Componente cliente que muestra el catálogo de empresas con      |
+ *| descuentos exclusivos para los agremiados del SNTE. Recibe los datos         |
+ *| de las empresas como props desde la página principal (Server Component)      |
  *| y permite filtrar por categoría usando un estado local.                      |
  *|==============================================================================|
  */
@@ -17,7 +17,7 @@ import { toast } from "sonner";
 import { CheckCircle } from "lucide-react";
 
 
-// Componente principal de la pagina (Server Component asíncrono)
+// Componente principal de la página (Server Component asíncrono)
 // Tiene una parte asíncrona porque necesita esperar los datos de Google Sheets
 export default function EmpresasClient({
   initialEmpresas,
@@ -27,7 +27,7 @@ export default function EmpresasClient({
   const empresas = initialEmpresas; // Si no hay datos, usamos arreglo vacío para evitar errores 
   return (
     <>
-      {/* Encabezado de la pagina con titulo y descripción */}
+      {/* Encabezado de la página con título y descripción */}
       <section className="border-b border-border bg-card">
         <div className="mx-auto max-w-7xl px-6 py-16 md:py-20">
           <span className="text-sm font-medium uppercase tracking-wider text-primary">
@@ -44,14 +44,14 @@ export default function EmpresasClient({
         </div>
       </section>
 
-      {/* Aviso para la asesora de como actualizar los datos */}
+      {/* Aviso para la asesora de cómo actualizar los datos */}
       <section className="mx-auto max-w-7xl px-6 pt-10">
         <div className="rounded-lg border border-primary/20 bg-accent p-4">
           <p className="text-sm text-accent-foreground">
             <span className="font-semibold">Para la administradora:</span> Este
             catálogo se actualiza desde una hoja de Google Sheets. Solo abre el
             Sheet compartido, agrega una nueva fila con los datos de la empresa
-            y los cambios se reflejan automáticamente en la pagina.
+            y los cambios se reflejan automáticamente en la página.
           </p>
         </div>
       </section>

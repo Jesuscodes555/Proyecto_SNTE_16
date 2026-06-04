@@ -1,14 +1,14 @@
 /* 
 *|=========================================================================|
 *| lib/google-sheets.ts                                                    |  
-*| Autor: Jesus Avalos (21460040)                                          | 
-*| Descripcion: Modulo utilitario para conectarse a Google Sheets          | 
-*| y leer los datos de las hojas de calculo que usa la asesora             | 
+*| Autor: Jesús Avalos (21460040)                                          | 
+*| Descripción: Módulo utilitario para conectarse a Google Sheets          | 
+*| y leer los datos de las hojas de cálculo que usa la asesora             | 
 *| para actualizar empresas y beneficios sin tocar código.                 | 
 *|                                                                         | 
-*| Como funciona:                                                          | 
+*| Cómo funciona:                                                          | 
 *| 1. La asesora edita un Google Sheet normal (como Excel online).         | 
-*| 2. Esta función llama a la API publica de Google Sheets.                | 
+*| 2. Esta función llama a la API pública de Google Sheets.                | 
 *| 3. Convierte las filas del Sheet en objetos JSON para usar en la web.   | 
 *|                                                                         | 
 *| Requisitos:                                                             |
@@ -58,7 +58,7 @@ async function fetchSheetData(
 
 
   // Si no hay API Key configurada, retornamos arreglo vacío
-  // para que la pagina no truene, solo se muestra sin datos
+  // para que la página no truene, solo se muestra sin datos
   if (!apiKey) {
     console.warn(
       "[Google Sheets] No se encontró GOOGLE_SHEETS_API_KEY. Usando datos de respaldo."
@@ -135,7 +135,7 @@ export async function getEmpresas(): Promise<Empresa[]> {
  * La hoja debe tener las columnas en este orden:
  * A: titulo | B: descripcion | C: icono
  *
- * Los iconos validos son: Shield, Banknote, GraduationCap, Tag, Scale, Plane
+ * Los iconos válidos son: Shield, Banknote, GraduationCap, Tag, Scale, Plane
  * Si no hay API Key o falla la conexión, usa datos de respaldo del JSON local.
  */
 export async function getBeneficios(): Promise<Beneficio[]> {

@@ -1,12 +1,12 @@
 /*
 *|=========================================================================|
 *| app/beneficios/page.tsx                                                 |  
-*| Autor: Jesus Avalos (21460040)                                          | 
-*| Descripcion: Pagina que muestra los beneficios sindicales               |
+*| Autor: Jesús Avalos (21460040)                                          | 
+*| Descripción: Página que muestra los beneficios sindicales               |
 *| disponibles para los agremiados de la Delegación D-V-16.                |
 *| Los datos se cargan desde Google Sheets para que la asesora             |
 *| pueda actualizarlos sin necesidad de modificar el código.               | 
-*| Incluye un CTA (llamada a la acción) hacia la pagina de empresas.       |   
+*| Incluye un CTA (llamada a la acción) hacia la página de empresas.       |   
 *|=========================================================================|
 */
 
@@ -26,9 +26,9 @@ import { Button } from "@/components/ui/button"
 import type { Metadata } from "next"
 import { beneficiosColorMap } from "@/lib/colorMaps" // Importamos el mapa de colores para beneficios
 
-export const dynamic = "force-dynamic" // Forzamos que esta pagina sea dinámica para siempre mostrar datos actualizados de Google Sheets
+export const dynamic = "force-dynamic" // Forzamos que esta página sea dinámica para siempre mostrar datos actualizados de Google Sheets
 
-// Metadatos SEO de la pagina
+// Metadatos SEO de la página
 export const metadata: Metadata = {
   title: "Beneficios | SNTE Delegación D-V-16",
   description:
@@ -39,11 +39,11 @@ export const metadata: Metadata = {
 // con el componente real de Lucide React para renderizarlo
 const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
   Seguro: Shield, // Icono de escudo - para seguro de vida
-  Prestamos: Banknote, // Icono de billete - para prestamos
+  Prestamos: Banknote, // Icono de billete - para préstamos
   Capacitacion: GraduationCap, // Icono de birrete - para capacitación
   Descuentos: Tag, // Icono de etiqueta - para descuentos
   Legal: Scale, // Icono de balanza - para asesoría legal
-  Viaticos: Plane, // Icono de avion - para viáticos
+  Viaticos: Plane, // Icono de avión - para viáticos
 }
 
 
@@ -55,7 +55,7 @@ export default async function BeneficiosPage() {
 
   return (
     <>
-      {/* Encabezado de la pagina */}
+      {/* Encabezado de la página */}
       <section className="border-b border-border bg-card">
         <div className="mx-auto max-w-7xl px-6 py-16 md:py-20">
           <span className="text-sm font-medium uppercase tracking-wider text-primary">

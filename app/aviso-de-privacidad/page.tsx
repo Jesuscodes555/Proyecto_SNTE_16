@@ -1,11 +1,11 @@
 /*
 *|=========================================================================|
 *| app/aviso-de-privacidad/page.tsx                                        |  
-*| Autor: Jesus Avalos (21460040)                                          | 
-*| Descripcion: Pagina del Aviso de Privacidad. Es un requisito.           |
-*| legal en Mexico (Ley Federal de Protección de Datos Personales).        |
-*| que todo sitio web que recabe datos tenga uno. Esta pagina.             |
-*| es estática (no carga datos externos) y se accede desde el.             |
+*| Autor: Jesús Avalos (21460040)                                          | 
+*| Descripción: Página del Aviso de Privacidad. Es un requisito            |
+*| legal en México (Ley Federal de Protección de Datos Personales)         |
+*| que todo sitio web que recabe datos tenga uno. Esta página              |
+*| es estática (no carga datos externos) y se accede desde el              |
 *| link en el footer del sitio.                                            |
 *|=========================================================================|
 */
@@ -36,18 +36,18 @@ export default function AvisoPrivacidadPage() {
           Protección de Datos Personales en Posesión de los Particulares.
         </p>
 
-        {/* Subtitulo: que datos se recaban */}
+        {/* Subtítulo: qué datos se recaban */}
         <h2 className="text-lg font-semibold text-foreground">
           Datos personales recabados
         </h2>
         <p>
           Para las finalidades señaladas en el presente aviso de privacidad,
           podemos recabar sus datos personales de distintas formas: cuando usted
-          nos los proporciona directamente, cuando visita nuestro sitio web o
-          cuando los obtenemos a traves de otras fuentes permitidas por la ley.
+          nos los proporciona directamente,           cuando visita nuestro sitio web o
+          cuando los obtenemos a través de otras fuentes permitidas por la ley.
         </p>
 
-        {/* Subtitulo: para que se usan los datos */}
+        {/* Subtítulo: para qué se usan los datos */}
         <h2 className="text-lg font-semibold text-foreground">
           Finalidades del tratamiento
         </h2>
@@ -59,7 +59,7 @@ export default function AvisoPrivacidadPage() {
           solicitudes de información.
         </p>
 
-        {/* Subtitulo: como contactar para dudas */}
+        {/* Subtítulo: cómo contactar para dudas */}
         <h2 className="text-lg font-semibold text-foreground">Contacto</h2>
         <p>
           Si tiene preguntas sobre este aviso de privacidad, puede contactarnos
@@ -72,9 +72,9 @@ export default function AvisoPrivacidadPage() {
           </a>
         </p>
 
-        {/* Fecha de ultima actualización */}
+        {/* Fecha de última actualización */}
         <p className="mt-4 text-xs text-muted-foreground/60">
-          Ultima actualización: Febrero 2026
+          Última actualización: Febrero 2026
         </p>
       </div>
     </section>

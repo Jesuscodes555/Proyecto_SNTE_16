@@ -1,20 +1,20 @@
 /*
  *|=========================================================================|
  *| components/navbar.tsx                                                   |
- *| Autor: Jesus Avalos (21460040)                                          |
+ *| Autor: Jesús Avalos (21460040)                                          |
  *| Descripción: Componente de la barra de navegación principal.            |
  *| Es "sticky" (se queda fija arriba al hacer scroll) y tiene              |
  *| versión de escritorio (links horizontales) y versión móvil              |
- *| (menu hamburguesa que se abre/cierra). Usa "use client"                 |
- *| porque necesita useState para controlar el menu móvil.                  |
+ *| (menú hamburguesa que se abre/cierra). Usa "use client"                 |
+ *| porque necesita useState para controlar el menú móvil.                  |
  *|=========================================================================|
  */
 
 "use client";
 
-import Link from "next/link"; // Componente de Next.js para navegación sin recargar la pagina
-import { usePathname } from "next/navigation"; // Hook para saber en que pagina estamos
-import { useState } from "react"; // Hook de React para manejar estado (menu abierto/cerrado)
+import Link from "next/link"; // Componente de Next.js para navegación sin recargar la página
+import { usePathname } from "next/navigation"; // Hook para saber en qué página estamos
+import { useState } from "react"; // Hook de React para manejar estado (menú abierto/cerrado)
 import { Menu, X } from "lucide-react"; // Iconos de hamburguesa y cerrar
 import { cn } from "@/lib/utils"; // Utilidad para combinar clases CSS condicionalmente
 import Image from "next/image"; // Componente de Next.js para optimizar imágenes
@@ -33,7 +33,7 @@ const links = [
 export function Navbar() {
   // usePathname nos dice la ruta actual, ej: "/beneficios"
   const pathname = usePathname();
-  // Estado para controlar si el menu móvil esta abierto o cerrado
+  // Estado para controlar si el menú móvil está abierto o cerrado
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
@@ -68,7 +68,7 @@ export function Navbar() {
           </div>
         </Link>
 
-        {/* Menu de escritorio - se oculta en pantallas pequeñas (hidden md:flex) */}
+        {/* Menú de escritorio - se oculta en pantallas pequeñas (hidden md:flex) */}
         <ul className="hidden items-center gap-1 md:flex">
           {links.map((link) => (
             <li key={link.href}>
@@ -76,7 +76,7 @@ export function Navbar() {
                 href={link.href}
                 className={cn(
                   "rounded-md px-3 py-2 text-sm font-medium transition-colors",
-                  // Si es la pagina actual, se resalta con fondo de acento
+                  // Si es la página actual, se resalta con fondo de acento
                   pathname === link.href
                     ? "bg-accent text-accent-foreground"
                     : "text-muted-foreground hover:bg-muted hover:text-foreground",
@@ -93,9 +93,9 @@ export function Navbar() {
           type="button"
           className="rounded-md p-2 text-muted-foreground hover:bg-muted md:hidden"
           onClick={() => setMobileOpen(!mobileOpen)}
-          aria-label={mobileOpen ? "Cerrar menu" : "Abrir menu"}
+          aria-label={mobileOpen ? "Cerrar menú" : "Abrir menú"}
         >
-          {/* Muestra X si esta abierto, hamburguesa si esta cerrado */}
+          {/* Muestra X si está abierto, hamburguesa si está cerrado */}
           {mobileOpen ? (
             <X className="h-5 w-5" />
           ) : (
@@ -104,7 +104,7 @@ export function Navbar() {
         </button>
       </nav>
 
-      {/* Menu móvil desplegable - solo se muestra cuando mobileOpen es true */}
+      {/* Menú móvil desplegable - solo se muestra cuando mobileOpen es true */}
       {mobileOpen && (
         <div className="border-t border-border px-6 pb-4 md:hidden">
           <ul className="flex flex-col gap-1 pt-2">
@@ -112,7 +112,7 @@ export function Navbar() {
               <li key={link.href}>
                 <Link
                   href={link.href}
-                  onClick={() => setMobileOpen(false)} // Cierra el menu al seleccionar
+                  onClick={() => setMobileOpen(false)} // Cierra el menú al seleccionar
                   className={cn(
                     "block rounded-md px-3 py-2.5 text-sm font-medium transition-colors",
                     pathname === link.href
